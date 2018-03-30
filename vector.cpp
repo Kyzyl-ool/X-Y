@@ -42,7 +42,8 @@ public:
 	virtual data_T operator[](int n);
 	virtual data_T operator[](double t);
 	
-	data_T
+	data_T max();
+	data_T min();
 	
 	vector <data_T>& operator=(const vector <data_T>& that);
 	//~ vector <data_T>& operator=(const vector <data_T>&& that);
@@ -205,3 +206,22 @@ vector <data_T>& vector <data_T>::operator=(const vector <data_T>& that)
 	return *this;
 }
 
+template <typename data_T>
+data_T vector <data_T>::max()
+{
+	data_T tmp = data[0];
+	for (uint i = 0; i < count; i++)
+		if (data[i] > tmp)
+			tmp = data[i];
+	return tmp;
+}
+
+template <typename data_T>
+data_T vector <data_T>::min()
+{
+	data_T tmp = data[0];
+	for (uint i = 0; i < count; i++)
+		if (data[i] < tmp)
+			tmp = data[i];
+	return tmp;
+}

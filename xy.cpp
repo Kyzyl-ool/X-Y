@@ -1,7 +1,13 @@
 #include <iostream>
 #include <fstream>
+#include <SFML/Graphics.hpp>
 #include "vector.cpp"
 #include "sfml.cpp"
+
+#define WIDTH 800
+#define HEIGHT 600
+#define MAXN 100
+
 
 using std::cout;
 using std::endl;
@@ -18,9 +24,29 @@ int main()
 		a.append(tmp);
 	}
 	
-	//~ sfRunWindow(640, 480, "TEST");
-	
 	a.dump("a", "stdout");
-	//~ cout << a[0] << endl;
+	//~ cout << a.min() << endl;
+	
+	sf::VertexArray lines(sf::Points, a.length());
+	for (int i = 0; i < a.length(); i++)
+	{
+		lines[i].position = sf::Vector2f(WIDTH*i/a.length(), HEIGHT-HEIGHT*a[i]/a.max());
+		lines[i].color = sf::Color::White;
+	}
+	
+	sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "X-Y");
+	while (window.isOpen())
+	{
+		sf::Event event;
+		while (window.pollEvent(event))
+		{
+			if (event.type == sf::Event::Closed)
+				window.close();
+		}
+		window.clear();
+		window.draw(lines);
+		window.display();
+	}
+	
 	return 0;
 }
