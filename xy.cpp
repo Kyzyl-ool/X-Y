@@ -6,7 +6,7 @@
 
 #define WIDTH 800
 #define HEIGHT 600
-#define MAXN 100
+#define MAXN 1000
 
 
 using std::cout;
@@ -27,10 +27,10 @@ int main()
 	a.dump("a", "stdout");
 	//~ cout << a.min() << endl;
 	
-	sf::VertexArray lines(sf::Points, a.length());
-	for (int i = 0; i < a.length(); i++)
+	sf::VertexArray lines(sf::Points, MAXN);
+	for (int i = 0; i < MAXN; i++)
 	{
-		lines[i].position = sf::Vector2f(WIDTH*i/a.length(), HEIGHT-HEIGHT*a[i]/a.max());
+		lines[i].position = sf::Vector2f(WIDTH*i/MAXN, HEIGHT-HEIGHT*a[(double)a.length()*i/MAXN]/a.max());
 		lines[i].color = sf::Color::White;
 	}
 	
