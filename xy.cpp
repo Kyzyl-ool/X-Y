@@ -6,7 +6,7 @@
 
 #define WIDTH 800
 #define HEIGHT 600
-#define MAXN 1000
+#define MAXN 100
 
 
 using std::cout;
@@ -27,7 +27,7 @@ int main()
 	a.dump("a", "stdout");
 	//~ cout << a.min() << endl;
 	
-	sf::VertexArray lines(sf::Points, MAXN);
+	sf::VertexArray lines(sf::LineStrip, MAXN);
 	for (int i = 0; i < MAXN; i++)
 	{
 		lines[i].position = sf::Vector2f(WIDTH*i/MAXN, HEIGHT-HEIGHT*a[(double)a.length()*i/MAXN]/a.max());
