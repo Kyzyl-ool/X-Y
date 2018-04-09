@@ -1,0 +1,15 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	"build_systems":
+    [
+        {
+            "name": "cpp-sfml",
+            "shell_cmd": "g++ xy.cpp -lsfml-window -lsfml-system -lsfml-graphics; ./a.out"
+        }
+    ]
+}

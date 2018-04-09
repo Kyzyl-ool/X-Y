@@ -1,0 +1,1023 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+SFML_AUDIO_HPP	SFML/Audio.hpp	/^#define SFML_AUDIO_HPP$/;"	d
+AlResource	SFML/Audio/AlResource.hpp	/^class SFML_AUDIO_API AlResource$/;"	c	namespace:sf
+SFML_ALRESOURCE_HPP	SFML/Audio/AlResource.hpp	/^#define SFML_ALRESOURCE_HPP$/;"	d
+sf	SFML/Audio/AlResource.hpp	/^namespace sf$/;"	n
+SFML_AUDIO_API	SFML/Audio/Export.hpp	/^    #define SFML_AUDIO_API /;"	d
+SFML_AUDIO_EXPORT_HPP	SFML/Audio/Export.hpp	/^#define SFML_AUDIO_EXPORT_HPP$/;"	d
+InputSoundFile	SFML/Audio/InputSoundFile.hpp	/^class SFML_AUDIO_API InputSoundFile : NonCopyable$/;"	c	namespace:sf
+SFML_INPUTSOUNDFILE_HPP	SFML/Audio/InputSoundFile.hpp	/^#define SFML_INPUTSOUNDFILE_HPP$/;"	d
+m_channelCount	SFML/Audio/InputSoundFile.hpp	/^    unsigned int     m_channelCount; \/\/\/< Number of channels of the sound$/;"	m	class:sf::InputSoundFile
+m_reader	SFML/Audio/InputSoundFile.hpp	/^    SoundFileReader* m_reader;       \/\/\/< Reader that handles I\/O on the file's format$/;"	m	class:sf::InputSoundFile
+m_sampleCount	SFML/Audio/InputSoundFile.hpp	/^    Uint64           m_sampleCount;  \/\/\/< Total number of samples in the file$/;"	m	class:sf::InputSoundFile
+m_sampleRate	SFML/Audio/InputSoundFile.hpp	/^    unsigned int     m_sampleRate;   \/\/\/< Number of samples per second$/;"	m	class:sf::InputSoundFile
+m_stream	SFML/Audio/InputSoundFile.hpp	/^    InputStream*     m_stream;       \/\/\/< Input stream used to access the file's data$/;"	m	class:sf::InputSoundFile
+m_streamOwned	SFML/Audio/InputSoundFile.hpp	/^    bool             m_streamOwned;  \/\/\/< Is the stream internal or external?$/;"	m	class:sf::InputSoundFile
+sf	SFML/Audio/InputSoundFile.hpp	/^namespace sf$/;"	n
+Listener	SFML/Audio/Listener.hpp	/^class SFML_AUDIO_API Listener$/;"	c	namespace:sf
+SFML_LISTENER_HPP	SFML/Audio/Listener.hpp	/^#define SFML_LISTENER_HPP$/;"	d
+sf	SFML/Audio/Listener.hpp	/^namespace sf$/;"	n
+Music	SFML/Audio/Music.hpp	/^class SFML_AUDIO_API Music : public SoundStream$/;"	c	namespace:sf
+SFML_MUSIC_HPP	SFML/Audio/Music.hpp	/^#define SFML_MUSIC_HPP$/;"	d
+m_duration	SFML/Audio/Music.hpp	/^    Time               m_duration; \/\/\/< Music duration$/;"	m	class:sf::Music
+m_file	SFML/Audio/Music.hpp	/^    InputSoundFile     m_file;     \/\/\/< The streamed music file$/;"	m	class:sf::Music
+m_mutex	SFML/Audio/Music.hpp	/^    Mutex              m_mutex;    \/\/\/< Mutex protecting the data$/;"	m	class:sf::Music
+m_samples	SFML/Audio/Music.hpp	/^    std::vector<Int16> m_samples;  \/\/\/< Temporary buffer of samples$/;"	m	class:sf::Music
+sf	SFML/Audio/Music.hpp	/^namespace sf$/;"	n
+OutputSoundFile	SFML/Audio/OutputSoundFile.hpp	/^class SFML_AUDIO_API OutputSoundFile : NonCopyable$/;"	c	namespace:sf
+SFML_OUTPUTSOUNDFILE_HPP	SFML/Audio/OutputSoundFile.hpp	/^#define SFML_OUTPUTSOUNDFILE_HPP$/;"	d
+m_writer	SFML/Audio/OutputSoundFile.hpp	/^    SoundFileWriter* m_writer; \/\/\/< Writer that handles I\/O on the file's format$/;"	m	class:sf::OutputSoundFile
+sf	SFML/Audio/OutputSoundFile.hpp	/^namespace sf$/;"	n
+SFML_SOUND_HPP	SFML/Audio/Sound.hpp	/^#define SFML_SOUND_HPP$/;"	d
+Sound	SFML/Audio/Sound.hpp	/^class SFML_AUDIO_API Sound : public SoundSource$/;"	c	namespace:sf
+m_buffer	SFML/Audio/Sound.hpp	/^    const SoundBuffer* m_buffer; \/\/\/< Sound buffer bound to the source$/;"	m	class:sf::Sound
+sf	SFML/Audio/Sound.hpp	/^namespace sf$/;"	n
+SFML_SOUNDBUFFER_HPP	SFML/Audio/SoundBuffer.hpp	/^#define SFML_SOUNDBUFFER_HPP$/;"	d
+SoundBuffer	SFML/Audio/SoundBuffer.hpp	/^class SFML_AUDIO_API SoundBuffer : AlResource$/;"	c	namespace:sf
+SoundList	SFML/Audio/SoundBuffer.hpp	/^    typedef std::set<Sound*> SoundList; \/\/\/< Set of unique sound instances$/;"	t	class:sf::SoundBuffer
+m_buffer	SFML/Audio/SoundBuffer.hpp	/^    unsigned int       m_buffer;   \/\/\/< OpenAL buffer identifier$/;"	m	class:sf::SoundBuffer
+m_duration	SFML/Audio/SoundBuffer.hpp	/^    Time               m_duration; \/\/\/< Sound duration$/;"	m	class:sf::SoundBuffer
+m_samples	SFML/Audio/SoundBuffer.hpp	/^    std::vector<Int16> m_samples;  \/\/\/< Samples buffer$/;"	m	class:sf::SoundBuffer
+m_sounds	SFML/Audio/SoundBuffer.hpp	/^    mutable SoundList  m_sounds;   \/\/\/< List of sounds that are using this buffer$/;"	m	class:sf::SoundBuffer
+sf	SFML/Audio/SoundBuffer.hpp	/^namespace sf$/;"	n
+SFML_SOUNDBUFFERRECORDER_HPP	SFML/Audio/SoundBufferRecorder.hpp	/^#define SFML_SOUNDBUFFERRECORDER_HPP$/;"	d
+SoundBufferRecorder	SFML/Audio/SoundBufferRecorder.hpp	/^class SFML_AUDIO_API SoundBufferRecorder : public SoundRecorder$/;"	c	namespace:sf
+m_buffer	SFML/Audio/SoundBufferRecorder.hpp	/^    SoundBuffer        m_buffer;  \/\/\/< Sound buffer that will contain the recorded data$/;"	m	class:sf::SoundBufferRecorder
+m_samples	SFML/Audio/SoundBufferRecorder.hpp	/^    std::vector<Int16> m_samples; \/\/\/< Temporary sample buffer to hold the recorded data$/;"	m	class:sf::SoundBufferRecorder
+sf	SFML/Audio/SoundBufferRecorder.hpp	/^namespace sf$/;"	n
+ReaderFactory	SFML/Audio/SoundFileFactory.hpp	/^    struct ReaderFactory$/;"	s	class:sf::SoundFileFactory
+ReaderFactoryArray	SFML/Audio/SoundFileFactory.hpp	/^    typedef std::vector<ReaderFactory> ReaderFactoryArray;$/;"	t	class:sf::SoundFileFactory
+SFML_SOUNDFILEFACTORY_HPP	SFML/Audio/SoundFileFactory.hpp	/^#define SFML_SOUNDFILEFACTORY_HPP$/;"	d
+SoundFileFactory	SFML/Audio/SoundFileFactory.hpp	/^class SFML_AUDIO_API SoundFileFactory$/;"	c	namespace:sf
+WriterFactory	SFML/Audio/SoundFileFactory.hpp	/^    struct WriterFactory$/;"	s	class:sf::SoundFileFactory
+WriterFactoryArray	SFML/Audio/SoundFileFactory.hpp	/^    typedef std::vector<WriterFactory> WriterFactoryArray;$/;"	t	class:sf::SoundFileFactory
+check	SFML/Audio/SoundFileFactory.hpp	/^        bool (*check)(InputStream&);$/;"	m	struct:sf::SoundFileFactory::ReaderFactory
+check	SFML/Audio/SoundFileFactory.hpp	/^        bool (*check)(const std::string&);$/;"	m	struct:sf::SoundFileFactory::WriterFactory
+create	SFML/Audio/SoundFileFactory.hpp	/^        SoundFileReader* (*create)();$/;"	m	struct:sf::SoundFileFactory::ReaderFactory
+create	SFML/Audio/SoundFileFactory.hpp	/^        SoundFileWriter* (*create)();$/;"	m	struct:sf::SoundFileFactory::WriterFactory
+s_readers	SFML/Audio/SoundFileFactory.hpp	/^    static ReaderFactoryArray s_readers; \/\/\/< List of all registered readers$/;"	m	class:sf::SoundFileFactory
+s_writers	SFML/Audio/SoundFileFactory.hpp	/^    static WriterFactoryArray s_writers; \/\/\/< List of all registered writers$/;"	m	class:sf::SoundFileFactory
+sf	SFML/Audio/SoundFileFactory.hpp	/^namespace sf$/;"	n
+Info	SFML/Audio/SoundFileReader.hpp	/^    struct Info$/;"	s	class:sf::SoundFileReader
+SFML_SOUNDFILEREADER_HPP	SFML/Audio/SoundFileReader.hpp	/^#define SFML_SOUNDFILEREADER_HPP$/;"	d
+SoundFileReader	SFML/Audio/SoundFileReader.hpp	/^class SFML_AUDIO_API SoundFileReader$/;"	c	namespace:sf
+channelCount	SFML/Audio/SoundFileReader.hpp	/^        unsigned int channelCount; \/\/\/< Number of channels of the sound$/;"	m	struct:sf::SoundFileReader::Info
+sampleCount	SFML/Audio/SoundFileReader.hpp	/^        Uint64       sampleCount;  \/\/\/< Total number of samples in the file$/;"	m	struct:sf::SoundFileReader::Info
+sampleRate	SFML/Audio/SoundFileReader.hpp	/^        unsigned int sampleRate;   \/\/\/< Samples rate of the sound, in samples per second$/;"	m	struct:sf::SoundFileReader::Info
+sf	SFML/Audio/SoundFileReader.hpp	/^namespace sf$/;"	n
+~SoundFileReader	SFML/Audio/SoundFileReader.hpp	/^    virtual ~SoundFileReader() {}$/;"	f	class:sf::SoundFileReader
+SFML_SOUNDFILEWRITER_HPP	SFML/Audio/SoundFileWriter.hpp	/^#define SFML_SOUNDFILEWRITER_HPP$/;"	d
+SoundFileWriter	SFML/Audio/SoundFileWriter.hpp	/^class SFML_AUDIO_API SoundFileWriter$/;"	c	namespace:sf
+sf	SFML/Audio/SoundFileWriter.hpp	/^namespace sf$/;"	n
+~SoundFileWriter	SFML/Audio/SoundFileWriter.hpp	/^    virtual ~SoundFileWriter() {}$/;"	f	class:sf::SoundFileWriter
+SFML_SOUNDRECORDER_HPP	SFML/Audio/SoundRecorder.hpp	/^#define SFML_SOUNDRECORDER_HPP$/;"	d
+SoundRecorder	SFML/Audio/SoundRecorder.hpp	/^class SFML_AUDIO_API SoundRecorder : AlResource$/;"	c	namespace:sf
+m_channelCount	SFML/Audio/SoundRecorder.hpp	/^    unsigned int       m_channelCount;       \/\/\/< Number of recording channels$/;"	m	class:sf::SoundRecorder
+m_deviceName	SFML/Audio/SoundRecorder.hpp	/^    std::string        m_deviceName;         \/\/\/< Name of the audio capture device$/;"	m	class:sf::SoundRecorder
+m_isCapturing	SFML/Audio/SoundRecorder.hpp	/^    bool               m_isCapturing;        \/\/\/< Capturing state$/;"	m	class:sf::SoundRecorder
+m_processingInterval	SFML/Audio/SoundRecorder.hpp	/^    Time               m_processingInterval; \/\/\/< Time period between calls to onProcessSamples$/;"	m	class:sf::SoundRecorder
+m_sampleRate	SFML/Audio/SoundRecorder.hpp	/^    unsigned int       m_sampleRate;         \/\/\/< Sample rate$/;"	m	class:sf::SoundRecorder
+m_samples	SFML/Audio/SoundRecorder.hpp	/^    std::vector<Int16> m_samples;            \/\/\/< Buffer to store captured samples$/;"	m	class:sf::SoundRecorder
+m_thread	SFML/Audio/SoundRecorder.hpp	/^    Thread             m_thread;             \/\/\/< Thread running the background recording task$/;"	m	class:sf::SoundRecorder
+sf	SFML/Audio/SoundRecorder.hpp	/^namespace sf$/;"	n
+Paused	SFML/Audio/SoundSource.hpp	/^        Paused,  \/\/\/< Sound is paused$/;"	e	enum:sf::SoundSource::Status
+Playing	SFML/Audio/SoundSource.hpp	/^        Playing  \/\/\/< Sound is playing$/;"	e	enum:sf::SoundSource::Status
+SFML_SOUNDSOURCE_HPP	SFML/Audio/SoundSource.hpp	/^#define SFML_SOUNDSOURCE_HPP$/;"	d
+SoundSource	SFML/Audio/SoundSource.hpp	/^class SFML_AUDIO_API SoundSource : AlResource$/;"	c	namespace:sf
+Status	SFML/Audio/SoundSource.hpp	/^    enum Status$/;"	g	class:sf::SoundSource
+Stopped	SFML/Audio/SoundSource.hpp	/^        Stopped, \/\/\/< Sound is not playing$/;"	e	enum:sf::SoundSource::Status
+m_source	SFML/Audio/SoundSource.hpp	/^    unsigned int m_source; \/\/\/< OpenAL source identifier$/;"	m	class:sf::SoundSource
+sf	SFML/Audio/SoundSource.hpp	/^namespace sf$/;"	n
+BufferCount	SFML/Audio/SoundStream.hpp	/^        BufferCount = 3 \/\/\/< Number of audio buffers used by the streaming loop$/;"	e	enum:sf::SoundStream::__anon3
+Chunk	SFML/Audio/SoundStream.hpp	/^    struct Chunk$/;"	s	class:sf::SoundStream
+SFML_SOUNDSTREAM_HPP	SFML/Audio/SoundStream.hpp	/^#define SFML_SOUNDSTREAM_HPP$/;"	d
+SoundStream	SFML/Audio/SoundStream.hpp	/^class SFML_AUDIO_API SoundStream : public SoundSource$/;"	c	namespace:sf
+m_buffers	SFML/Audio/SoundStream.hpp	/^    unsigned int  m_buffers[BufferCount];    \/\/\/< Sound buffers used to store temporary audio data$/;"	m	class:sf::SoundStream
+m_channelCount	SFML/Audio/SoundStream.hpp	/^    unsigned int  m_channelCount;            \/\/\/< Number of channels (1 = mono, 2 = stereo, ...)$/;"	m	class:sf::SoundStream
+m_endBuffers	SFML/Audio/SoundStream.hpp	/^    bool          m_endBuffers[BufferCount]; \/\/\/< Each buffer is marked as "end buffer" or not, for proper duration calculation$/;"	m	class:sf::SoundStream
+m_format	SFML/Audio/SoundStream.hpp	/^    Uint32        m_format;                  \/\/\/< Format of the internal sound buffers$/;"	m	class:sf::SoundStream
+m_isStreaming	SFML/Audio/SoundStream.hpp	/^    bool          m_isStreaming;             \/\/\/< Streaming state (true = playing, false = stopped)$/;"	m	class:sf::SoundStream
+m_loop	SFML/Audio/SoundStream.hpp	/^    bool          m_loop;                    \/\/\/< Loop flag (true to loop, false to play once)$/;"	m	class:sf::SoundStream
+m_sampleRate	SFML/Audio/SoundStream.hpp	/^    unsigned int  m_sampleRate;              \/\/\/< Frequency (samples \/ second)$/;"	m	class:sf::SoundStream
+m_samplesProcessed	SFML/Audio/SoundStream.hpp	/^    Uint64        m_samplesProcessed;        \/\/\/< Number of buffers processed since beginning of the stream$/;"	m	class:sf::SoundStream
+m_thread	SFML/Audio/SoundStream.hpp	/^    Thread        m_thread;                  \/\/\/< Thread running the background tasks$/;"	m	class:sf::SoundStream
+m_threadMutex	SFML/Audio/SoundStream.hpp	/^    mutable Mutex m_threadMutex;             \/\/\/< Thread mutex$/;"	m	class:sf::SoundStream
+m_threadStartState	SFML/Audio/SoundStream.hpp	/^    Status        m_threadStartState;        \/\/\/< State the thread starts in (Playing, Paused, Stopped)$/;"	m	class:sf::SoundStream
+sampleCount	SFML/Audio/SoundStream.hpp	/^        std::size_t  sampleCount; \/\/\/< Number of samples pointed by Samples$/;"	m	struct:sf::SoundStream::Chunk
+samples	SFML/Audio/SoundStream.hpp	/^        const Int16* samples;     \/\/\/< Pointer to the audio samples$/;"	m	struct:sf::SoundStream::Chunk
+sf	SFML/Audio/SoundStream.hpp	/^namespace sf$/;"	n
+Int16	SFML/Config.hpp	/^    typedef signed   short Int16;$/;"	t	namespace:sf
+Int32	SFML/Config.hpp	/^    typedef signed   int Int32;$/;"	t	namespace:sf
+Int64	SFML/Config.hpp	/^        typedef signed   __int64 Int64;$/;"	t	namespace:sf
+Int64	SFML/Config.hpp	/^        typedef signed   long long Int64;$/;"	t	namespace:sf
+Int8	SFML/Config.hpp	/^    typedef signed   char Int8;$/;"	t	namespace:sf
+NOMINMAX	SFML/Config.hpp	/^        #define NOMINMAX$/;"	d
+SFML_API_EXPORT	SFML/Config.hpp	/^            #define SFML_API_EXPORT /;"	d
+SFML_API_EXPORT	SFML/Config.hpp	/^            #define SFML_API_EXPORT$/;"	d
+SFML_API_EXPORT	SFML/Config.hpp	/^        #define SFML_API_EXPORT /;"	d
+SFML_API_EXPORT	SFML/Config.hpp	/^    #define SFML_API_EXPORT$/;"	d
+SFML_API_IMPORT	SFML/Config.hpp	/^            #define SFML_API_IMPORT /;"	d
+SFML_API_IMPORT	SFML/Config.hpp	/^            #define SFML_API_IMPORT$/;"	d
+SFML_API_IMPORT	SFML/Config.hpp	/^        #define SFML_API_IMPORT /;"	d
+SFML_API_IMPORT	SFML/Config.hpp	/^    #define SFML_API_IMPORT$/;"	d
+SFML_CONFIG_HPP	SFML/Config.hpp	/^#define SFML_CONFIG_HPP$/;"	d
+SFML_DEBUG	SFML/Config.hpp	/^    #define SFML_DEBUG$/;"	d
+SFML_DEPRECATED	SFML/Config.hpp	/^    #define SFML_DEPRECATED /;"	d
+SFML_DEPRECATED	SFML/Config.hpp	/^    #define SFML_DEPRECATED$/;"	d
+SFML_SYSTEM_ANDROID	SFML/Config.hpp	/^        #define SFML_SYSTEM_ANDROID$/;"	d
+SFML_SYSTEM_FREEBSD	SFML/Config.hpp	/^        #define SFML_SYSTEM_FREEBSD$/;"	d
+SFML_SYSTEM_IOS	SFML/Config.hpp	/^        #define SFML_SYSTEM_IOS$/;"	d
+SFML_SYSTEM_LINUX	SFML/Config.hpp	/^        #define SFML_SYSTEM_LINUX$/;"	d
+SFML_SYSTEM_MACOS	SFML/Config.hpp	/^        #define SFML_SYSTEM_MACOS$/;"	d
+SFML_SYSTEM_WINDOWS	SFML/Config.hpp	/^    #define SFML_SYSTEM_WINDOWS$/;"	d
+SFML_VERSION_MAJOR	SFML/Config.hpp	/^#define SFML_VERSION_MAJOR /;"	d
+SFML_VERSION_MINOR	SFML/Config.hpp	/^#define SFML_VERSION_MINOR /;"	d
+SFML_VERSION_PATCH	SFML/Config.hpp	/^#define SFML_VERSION_PATCH /;"	d
+Uint16	SFML/Config.hpp	/^    typedef unsigned short Uint16;$/;"	t	namespace:sf
+Uint32	SFML/Config.hpp	/^    typedef unsigned int Uint32;$/;"	t	namespace:sf
+Uint64	SFML/Config.hpp	/^        typedef unsigned __int64 Uint64;$/;"	t	namespace:sf
+Uint64	SFML/Config.hpp	/^        typedef unsigned long long Uint64;$/;"	t	namespace:sf
+Uint8	SFML/Config.hpp	/^    typedef unsigned char Uint8;$/;"	t	namespace:sf
+sf	SFML/Config.hpp	/^namespace sf$/;"	n
+SFML_GRAPHICS_HPP	SFML/Graphics.hpp	/^#define SFML_GRAPHICS_HPP$/;"	d
+Add	SFML/Graphics/BlendMode.hpp	/^        Add,            \/\/\/< Pixel = Src * SrcFactor + Dst * DstFactor$/;"	e	enum:sf::BlendMode::Equation
+BlendMode	SFML/Graphics/BlendMode.hpp	/^struct SFML_GRAPHICS_API BlendMode$/;"	s	namespace:sf
+DstAlpha	SFML/Graphics/BlendMode.hpp	/^        DstAlpha,         \/\/\/< (dst.a, dst.a, dst.a, dst.a)$/;"	e	enum:sf::BlendMode::Factor
+DstColor	SFML/Graphics/BlendMode.hpp	/^        DstColor,         \/\/\/< (dst.r, dst.g, dst.b, dst.a)$/;"	e	enum:sf::BlendMode::Factor
+Equation	SFML/Graphics/BlendMode.hpp	/^    enum Equation$/;"	g	struct:sf::BlendMode
+Factor	SFML/Graphics/BlendMode.hpp	/^    enum Factor$/;"	g	struct:sf::BlendMode
+One	SFML/Graphics/BlendMode.hpp	/^        One,              \/\/\/< (1, 1, 1, 1)$/;"	e	enum:sf::BlendMode::Factor
+OneMinusDstAlpha	SFML/Graphics/BlendMode.hpp	/^        OneMinusDstAlpha  \/\/\/< (1, 1, 1, 1) - (dst.a, dst.a, dst.a, dst.a)$/;"	e	enum:sf::BlendMode::Factor
+OneMinusDstColor	SFML/Graphics/BlendMode.hpp	/^        OneMinusDstColor, \/\/\/< (1, 1, 1, 1) - (dst.r, dst.g, dst.b, dst.a)$/;"	e	enum:sf::BlendMode::Factor
+OneMinusSrcAlpha	SFML/Graphics/BlendMode.hpp	/^        OneMinusSrcAlpha, \/\/\/< (1, 1, 1, 1) - (src.a, src.a, src.a, src.a)$/;"	e	enum:sf::BlendMode::Factor
+OneMinusSrcColor	SFML/Graphics/BlendMode.hpp	/^        OneMinusSrcColor, \/\/\/< (1, 1, 1, 1) - (src.r, src.g, src.b, src.a)$/;"	e	enum:sf::BlendMode::Factor
+ReverseSubtract	SFML/Graphics/BlendMode.hpp	/^        ReverseSubtract \/\/\/< Pixel = Dst * DstFactor - Src * SrcFactor$/;"	e	enum:sf::BlendMode::Equation
+SFML_BLENDMODE_HPP	SFML/Graphics/BlendMode.hpp	/^#define SFML_BLENDMODE_HPP$/;"	d
+SrcAlpha	SFML/Graphics/BlendMode.hpp	/^        SrcAlpha,         \/\/\/< (src.a, src.a, src.a, src.a)$/;"	e	enum:sf::BlendMode::Factor
+SrcColor	SFML/Graphics/BlendMode.hpp	/^        SrcColor,         \/\/\/< (src.r, src.g, src.b, src.a)$/;"	e	enum:sf::BlendMode::Factor
+Subtract	SFML/Graphics/BlendMode.hpp	/^        Subtract,       \/\/\/< Pixel = Src * SrcFactor - Dst * DstFactor$/;"	e	enum:sf::BlendMode::Equation
+Zero	SFML/Graphics/BlendMode.hpp	/^        Zero,             \/\/\/< (0, 0, 0, 0)$/;"	e	enum:sf::BlendMode::Factor
+alphaDstFactor	SFML/Graphics/BlendMode.hpp	/^    Factor   alphaDstFactor; \/\/\/< Destination blending factor for the alpha channel$/;"	m	struct:sf::BlendMode
+alphaEquation	SFML/Graphics/BlendMode.hpp	/^    Equation alphaEquation;  \/\/\/< Blending equation for the alpha channel$/;"	m	struct:sf::BlendMode
+alphaSrcFactor	SFML/Graphics/BlendMode.hpp	/^    Factor   alphaSrcFactor; \/\/\/< Source blending factor for the alpha channel$/;"	m	struct:sf::BlendMode
+colorDstFactor	SFML/Graphics/BlendMode.hpp	/^    Factor   colorDstFactor; \/\/\/< Destination blending factor for the color channels$/;"	m	struct:sf::BlendMode
+colorEquation	SFML/Graphics/BlendMode.hpp	/^    Equation colorEquation;  \/\/\/< Blending equation for the color channels$/;"	m	struct:sf::BlendMode
+colorSrcFactor	SFML/Graphics/BlendMode.hpp	/^    Factor   colorSrcFactor; \/\/\/< Source blending factor for the color channels$/;"	m	struct:sf::BlendMode
+sf	SFML/Graphics/BlendMode.hpp	/^namespace sf$/;"	n
+CircleShape	SFML/Graphics/CircleShape.hpp	/^class SFML_GRAPHICS_API CircleShape : public Shape$/;"	c	namespace:sf
+SFML_CIRCLESHAPE_HPP	SFML/Graphics/CircleShape.hpp	/^#define SFML_CIRCLESHAPE_HPP$/;"	d
+m_pointCount	SFML/Graphics/CircleShape.hpp	/^    std::size_t m_pointCount; \/\/\/< Number of points composing the circle$/;"	m	class:sf::CircleShape
+m_radius	SFML/Graphics/CircleShape.hpp	/^    float       m_radius;     \/\/\/< Radius of the circle$/;"	m	class:sf::CircleShape
+sf	SFML/Graphics/CircleShape.hpp	/^namespace sf$/;"	n
+Black	SFML/Graphics/Color.hpp	/^    static const Color Black;       \/\/\/< Black predefined color$/;"	m	class:sf::Color
+Blue	SFML/Graphics/Color.hpp	/^    static const Color Blue;        \/\/\/< Blue predefined color$/;"	m	class:sf::Color
+Color	SFML/Graphics/Color.hpp	/^class SFML_GRAPHICS_API Color$/;"	c	namespace:sf
+Cyan	SFML/Graphics/Color.hpp	/^    static const Color Cyan;        \/\/\/< Cyan predefined color$/;"	m	class:sf::Color
+Green	SFML/Graphics/Color.hpp	/^    static const Color Green;       \/\/\/< Green predefined color$/;"	m	class:sf::Color
+Magenta	SFML/Graphics/Color.hpp	/^    static const Color Magenta;     \/\/\/< Magenta predefined color$/;"	m	class:sf::Color
+Red	SFML/Graphics/Color.hpp	/^    static const Color Red;         \/\/\/< Red predefined color$/;"	m	class:sf::Color
+SFML_COLOR_HPP	SFML/Graphics/Color.hpp	/^#define SFML_COLOR_HPP$/;"	d
+Transparent	SFML/Graphics/Color.hpp	/^    static const Color Transparent; \/\/\/< Transparent (black) predefined color$/;"	m	class:sf::Color
+White	SFML/Graphics/Color.hpp	/^    static const Color White;       \/\/\/< White predefined color$/;"	m	class:sf::Color
+Yellow	SFML/Graphics/Color.hpp	/^    static const Color Yellow;      \/\/\/< Yellow predefined color$/;"	m	class:sf::Color
+a	SFML/Graphics/Color.hpp	/^    Uint8 a; \/\/\/< Alpha (opacity) component$/;"	m	class:sf::Color
+b	SFML/Graphics/Color.hpp	/^    Uint8 b; \/\/\/< Blue component$/;"	m	class:sf::Color
+g	SFML/Graphics/Color.hpp	/^    Uint8 g; \/\/\/< Green component$/;"	m	class:sf::Color
+r	SFML/Graphics/Color.hpp	/^    Uint8 r; \/\/\/< Red component$/;"	m	class:sf::Color
+sf	SFML/Graphics/Color.hpp	/^namespace sf$/;"	n
+ConvexShape	SFML/Graphics/ConvexShape.hpp	/^class SFML_GRAPHICS_API ConvexShape : public Shape$/;"	c	namespace:sf
+SFML_CONVEXSHAPE_HPP	SFML/Graphics/ConvexShape.hpp	/^#define SFML_CONVEXSHAPE_HPP$/;"	d
+m_points	SFML/Graphics/ConvexShape.hpp	/^    std::vector<Vector2f> m_points; \/\/\/< Points composing the convex polygon$/;"	m	class:sf::ConvexShape
+sf	SFML/Graphics/ConvexShape.hpp	/^namespace sf$/;"	n
+Drawable	SFML/Graphics/Drawable.hpp	/^class SFML_GRAPHICS_API Drawable$/;"	c	namespace:sf
+SFML_DRAWABLE_HPP	SFML/Graphics/Drawable.hpp	/^#define SFML_DRAWABLE_HPP$/;"	d
+sf	SFML/Graphics/Drawable.hpp	/^namespace sf$/;"	n
+~Drawable	SFML/Graphics/Drawable.hpp	/^    virtual ~Drawable() {}$/;"	f	class:sf::Drawable
+SFML_GRAPHICS_API	SFML/Graphics/Export.hpp	/^    #define SFML_GRAPHICS_API /;"	d
+SFML_GRAPHICS_EXPORT_HPP	SFML/Graphics/Export.hpp	/^#define SFML_GRAPHICS_EXPORT_HPP$/;"	d
+Font	SFML/Graphics/Font.hpp	/^class SFML_GRAPHICS_API Font$/;"	c	namespace:sf
+GlyphTable	SFML/Graphics/Font.hpp	/^    typedef std::map<Uint64, Glyph> GlyphTable; \/\/\/< Table mapping a codepoint to its glyph$/;"	t	class:sf::Font
+Info	SFML/Graphics/Font.hpp	/^    struct Info$/;"	s	class:sf::Font
+Page	SFML/Graphics/Font.hpp	/^    struct Page$/;"	s	class:sf::Font
+PageTable	SFML/Graphics/Font.hpp	/^    typedef std::map<unsigned int, Page> PageTable; \/\/\/< Table mapping a character size to its page (texture)$/;"	t	class:sf::Font
+Row	SFML/Graphics/Font.hpp	/^        Row(unsigned int rowTop, unsigned int rowHeight) : width(0), top(rowTop), height(rowHeight) {}$/;"	f	struct:sf::Font::Row
+Row	SFML/Graphics/Font.hpp	/^    struct Row$/;"	s	class:sf::Font
+SFML_FONT_HPP	SFML/Graphics/Font.hpp	/^#define SFML_FONT_HPP$/;"	d
+family	SFML/Graphics/Font.hpp	/^        std::string family; \/\/\/< The font family$/;"	m	struct:sf::Font::Info
+glyphs	SFML/Graphics/Font.hpp	/^        GlyphTable       glyphs;  \/\/\/< Table mapping code points to their corresponding glyph$/;"	m	struct:sf::Font::Page
+height	SFML/Graphics/Font.hpp	/^        unsigned int height; \/\/\/< Height of the row$/;"	m	struct:sf::Font::Row
+m_face	SFML/Graphics/Font.hpp	/^    void*                      m_face;        \/\/\/< Pointer to the internal font face (it is typeless to avoid exposing implementation details)$/;"	m	class:sf::Font
+m_info	SFML/Graphics/Font.hpp	/^    Info                       m_info;        \/\/\/< Information about the font$/;"	m	class:sf::Font
+m_library	SFML/Graphics/Font.hpp	/^    void*                      m_library;     \/\/\/< Pointer to the internal library interface (it is typeless to avoid exposing implementation details)$/;"	m	class:sf::Font
+m_pages	SFML/Graphics/Font.hpp	/^    mutable PageTable          m_pages;       \/\/\/< Table containing the glyphs pages by character size$/;"	m	class:sf::Font
+m_pixelBuffer	SFML/Graphics/Font.hpp	/^    mutable std::vector<Uint8> m_pixelBuffer; \/\/\/< Pixel buffer holding a glyph's pixels before being written to the texture$/;"	m	class:sf::Font
+m_refCount	SFML/Graphics/Font.hpp	/^    int*                       m_refCount;    \/\/\/< Reference counter used by implicit sharing$/;"	m	class:sf::Font
+m_stream	SFML/Graphics/Font.hpp	/^    void*                      m_stream; \/\/\/< Asset file streamer (if loaded from file)$/;"	m	class:sf::Font
+m_streamRec	SFML/Graphics/Font.hpp	/^    void*                      m_streamRec;   \/\/\/< Pointer to the stream rec instance (it is typeless to avoid exposing implementation details)$/;"	m	class:sf::Font
+m_stroker	SFML/Graphics/Font.hpp	/^    void*                      m_stroker;     \/\/\/< Pointer to the stroker (it is typeless to avoid exposing implementation details)$/;"	m	class:sf::Font
+nextRow	SFML/Graphics/Font.hpp	/^        unsigned int     nextRow; \/\/\/< Y position of the next new row in the texture$/;"	m	struct:sf::Font::Page
+rows	SFML/Graphics/Font.hpp	/^        std::vector<Row> rows;    \/\/\/< List containing the position of all the existing rows$/;"	m	struct:sf::Font::Page
+sf	SFML/Graphics/Font.hpp	/^namespace sf$/;"	n
+texture	SFML/Graphics/Font.hpp	/^        Texture          texture; \/\/\/< Texture containing the pixels of the glyphs$/;"	m	struct:sf::Font::Page
+top	SFML/Graphics/Font.hpp	/^        unsigned int top;    \/\/\/< Y position of the row into the texture$/;"	m	struct:sf::Font::Row
+width	SFML/Graphics/Font.hpp	/^        unsigned int width;  \/\/\/< Current width of the row$/;"	m	struct:sf::Font::Row
+Bvec2	SFML/Graphics/Glsl.hpp	/^    typedef Vector2<bool> Bvec2;$/;"	t	namespace:sf::Glsl
+Bvec3	SFML/Graphics/Glsl.hpp	/^    typedef Vector3<bool> Bvec3;$/;"	t	namespace:sf::Glsl
+Bvec4	SFML/Graphics/Glsl.hpp	/^    typedef implementation-defined Bvec4;$/;"	t	namespace:sf::Glsl
+Bvec4	SFML/Graphics/Glsl.hpp	/^    typedef priv::Vector4<bool> Bvec4;$/;"	t	namespace:sf::Glsl
+Glsl	SFML/Graphics/Glsl.hpp	/^namespace Glsl$/;"	n	namespace:sf
+Ivec2	SFML/Graphics/Glsl.hpp	/^    typedef Vector2<int> Ivec2;$/;"	t	namespace:sf::Glsl
+Ivec3	SFML/Graphics/Glsl.hpp	/^    typedef Vector3<int> Ivec3;$/;"	t	namespace:sf::Glsl
+Ivec4	SFML/Graphics/Glsl.hpp	/^    typedef implementation-defined Ivec4;$/;"	t	namespace:sf::Glsl
+Ivec4	SFML/Graphics/Glsl.hpp	/^    typedef priv::Vector4<int> Ivec4;$/;"	t	namespace:sf::Glsl
+Mat3	SFML/Graphics/Glsl.hpp	/^    typedef implementation-defined Mat3;$/;"	t	namespace:sf::Glsl
+Mat3	SFML/Graphics/Glsl.hpp	/^    typedef priv::Matrix<3, 3> Mat3;$/;"	t	namespace:sf::Glsl
+Mat4	SFML/Graphics/Glsl.hpp	/^    typedef implementation-defined Mat4;$/;"	t	namespace:sf::Glsl
+Mat4	SFML/Graphics/Glsl.hpp	/^    typedef priv::Matrix<4, 4> Mat4;$/;"	t	namespace:sf::Glsl
+SFML_GLSL_HPP	SFML/Graphics/Glsl.hpp	/^#define SFML_GLSL_HPP$/;"	d
+Vec2	SFML/Graphics/Glsl.hpp	/^    typedef Vector2<float> Vec2;$/;"	t	namespace:sf::Glsl
+Vec3	SFML/Graphics/Glsl.hpp	/^    typedef Vector3<float> Vec3;$/;"	t	namespace:sf::Glsl
+Vec4	SFML/Graphics/Glsl.hpp	/^    typedef implementation-defined Vec4;$/;"	t	namespace:sf::Glsl
+Vec4	SFML/Graphics/Glsl.hpp	/^    typedef priv::Vector4<float> Vec4;$/;"	t	namespace:sf::Glsl
+priv	SFML/Graphics/Glsl.hpp	/^namespace priv$/;"	n	namespace:sf
+sf	SFML/Graphics/Glsl.hpp	/^namespace sf$/;"	n
+Glyph	SFML/Graphics/Glyph.hpp	/^    Glyph() : advance(0) {}$/;"	f	class:sf::Glyph
+Glyph	SFML/Graphics/Glyph.hpp	/^class SFML_GRAPHICS_API Glyph$/;"	c	namespace:sf
+SFML_GLYPH_HPP	SFML/Graphics/Glyph.hpp	/^#define SFML_GLYPH_HPP$/;"	d
+advance	SFML/Graphics/Glyph.hpp	/^    float     advance;     \/\/\/< Offset to move horizontally to the next character$/;"	m	class:sf::Glyph
+bounds	SFML/Graphics/Glyph.hpp	/^    FloatRect bounds;      \/\/\/< Bounding rectangle of the glyph, in coordinates relative to the baseline$/;"	m	class:sf::Glyph
+sf	SFML/Graphics/Glyph.hpp	/^namespace sf$/;"	n
+textureRect	SFML/Graphics/Glyph.hpp	/^    IntRect   textureRect; \/\/\/< Texture coordinates of the glyph inside the font's texture$/;"	m	class:sf::Glyph
+Image	SFML/Graphics/Image.hpp	/^class SFML_GRAPHICS_API Image$/;"	c	namespace:sf
+SFML_IMAGE_HPP	SFML/Graphics/Image.hpp	/^#define SFML_IMAGE_HPP$/;"	d
+m_pixels	SFML/Graphics/Image.hpp	/^    std::vector<Uint8> m_pixels; \/\/\/< Pixels of the image$/;"	m	class:sf::Image
+m_size	SFML/Graphics/Image.hpp	/^    Vector2u           m_size;   \/\/\/< Image size$/;"	m	class:sf::Image
+m_stream	SFML/Graphics/Image.hpp	/^    void*              m_stream; \/\/\/< Asset file streamer (if loaded from file)$/;"	m	class:sf::Image
+sf	SFML/Graphics/Image.hpp	/^namespace sf$/;"	n
+LineStrip	SFML/Graphics/PrimitiveType.hpp	/^    LineStrip,     \/\/\/< List of connected lines, a point uses the previous point to form a line$/;"	e	enum:sf::PrimitiveType
+Lines	SFML/Graphics/PrimitiveType.hpp	/^    Lines,         \/\/\/< List of individual lines$/;"	e	enum:sf::PrimitiveType
+LinesStrip	SFML/Graphics/PrimitiveType.hpp	/^    LinesStrip     = LineStrip,     \/\/\/< \\deprecated Use LineStrip instead$/;"	e	enum:sf::PrimitiveType
+Points	SFML/Graphics/PrimitiveType.hpp	/^    Points,        \/\/\/< List of individual points$/;"	e	enum:sf::PrimitiveType
+PrimitiveType	SFML/Graphics/PrimitiveType.hpp	/^enum PrimitiveType$/;"	g	namespace:sf
+Quads	SFML/Graphics/PrimitiveType.hpp	/^    Quads,         \/\/\/< List of individual quads (deprecated, don't work with OpenGL ES)$/;"	e	enum:sf::PrimitiveType
+SFML_PRIMITIVETYPE_HPP	SFML/Graphics/PrimitiveType.hpp	/^#define SFML_PRIMITIVETYPE_HPP$/;"	d
+TriangleFan	SFML/Graphics/PrimitiveType.hpp	/^    TriangleFan,   \/\/\/< List of connected triangles, a point uses the common center and the previous point to form a triangle$/;"	e	enum:sf::PrimitiveType
+TriangleStrip	SFML/Graphics/PrimitiveType.hpp	/^    TriangleStrip, \/\/\/< List of connected triangles, a point uses the two previous points to form a triangle$/;"	e	enum:sf::PrimitiveType
+Triangles	SFML/Graphics/PrimitiveType.hpp	/^    Triangles,     \/\/\/< List of individual triangles$/;"	e	enum:sf::PrimitiveType
+TrianglesFan	SFML/Graphics/PrimitiveType.hpp	/^    TrianglesFan   = TriangleFan    \/\/\/< \\deprecated Use TriangleFan instead$/;"	e	enum:sf::PrimitiveType
+TrianglesStrip	SFML/Graphics/PrimitiveType.hpp	/^    TrianglesStrip = TriangleStrip, \/\/\/< \\deprecated Use TriangleStrip instead$/;"	e	enum:sf::PrimitiveType
+sf	SFML/Graphics/PrimitiveType.hpp	/^namespace sf$/;"	n
+FloatRect	SFML/Graphics/Rect.hpp	/^typedef Rect<float> FloatRect;$/;"	t	namespace:sf
+IntRect	SFML/Graphics/Rect.hpp	/^typedef Rect<int>   IntRect;$/;"	t	namespace:sf
+Rect	SFML/Graphics/Rect.hpp	/^class Rect$/;"	c	namespace:sf
+SFML_RECT_HPP	SFML/Graphics/Rect.hpp	/^#define SFML_RECT_HPP$/;"	d
+height	SFML/Graphics/Rect.hpp	/^    T height; \/\/\/< Height of the rectangle$/;"	m	class:sf::Rect
+left	SFML/Graphics/Rect.hpp	/^    T left;   \/\/\/< Left coordinate of the rectangle$/;"	m	class:sf::Rect
+sf	SFML/Graphics/Rect.hpp	/^namespace sf$/;"	n
+top	SFML/Graphics/Rect.hpp	/^    T top;    \/\/\/< Top coordinate of the rectangle$/;"	m	class:sf::Rect
+width	SFML/Graphics/Rect.hpp	/^    T width;  \/\/\/< Width of the rectangle$/;"	m	class:sf::Rect
+RectangleShape	SFML/Graphics/RectangleShape.hpp	/^class SFML_GRAPHICS_API RectangleShape : public Shape$/;"	c	namespace:sf
+SFML_RECTANGLESHAPE_HPP	SFML/Graphics/RectangleShape.hpp	/^#define SFML_RECTANGLESHAPE_HPP$/;"	d
+m_size	SFML/Graphics/RectangleShape.hpp	/^    Vector2f m_size; \/\/\/< Size of the rectangle$/;"	m	class:sf::RectangleShape
+sf	SFML/Graphics/RectangleShape.hpp	/^namespace sf$/;"	n
+Default	SFML/Graphics/RenderStates.hpp	/^    static const RenderStates Default; \/\/\/< Special instance holding the default render states$/;"	m	class:sf::RenderStates
+RenderStates	SFML/Graphics/RenderStates.hpp	/^class SFML_GRAPHICS_API RenderStates$/;"	c	namespace:sf
+SFML_RENDERSTATES_HPP	SFML/Graphics/RenderStates.hpp	/^#define SFML_RENDERSTATES_HPP$/;"	d
+blendMode	SFML/Graphics/RenderStates.hpp	/^    BlendMode      blendMode; \/\/\/< Blending mode$/;"	m	class:sf::RenderStates
+sf	SFML/Graphics/RenderStates.hpp	/^namespace sf$/;"	n
+shader	SFML/Graphics/RenderStates.hpp	/^    const Shader*  shader;    \/\/\/< Shader$/;"	m	class:sf::RenderStates
+texture	SFML/Graphics/RenderStates.hpp	/^    const Texture* texture;   \/\/\/< Texture$/;"	m	class:sf::RenderStates
+transform	SFML/Graphics/RenderStates.hpp	/^    Transform      transform; \/\/\/< Transform$/;"	m	class:sf::RenderStates
+RenderTarget	SFML/Graphics/RenderTarget.hpp	/^class SFML_GRAPHICS_API RenderTarget : NonCopyable$/;"	c	namespace:sf
+SFML_RENDERTARGET_HPP	SFML/Graphics/RenderTarget.hpp	/^#define SFML_RENDERTARGET_HPP$/;"	d
+StatesCache	SFML/Graphics/RenderTarget.hpp	/^    struct StatesCache$/;"	s	class:sf::RenderTarget
+VertexCacheSize	SFML/Graphics/RenderTarget.hpp	/^        enum {VertexCacheSize = 4};$/;"	e	enum:sf::RenderTarget::StatesCache::__anon7
+glStatesSet	SFML/Graphics/RenderTarget.hpp	/^        bool      glStatesSet;    \/\/\/< Are our internal GL states set yet?$/;"	m	struct:sf::RenderTarget::StatesCache
+lastBlendMode	SFML/Graphics/RenderTarget.hpp	/^        BlendMode lastBlendMode;  \/\/\/< Cached blending mode$/;"	m	struct:sf::RenderTarget::StatesCache
+lastTextureId	SFML/Graphics/RenderTarget.hpp	/^        Uint64    lastTextureId;  \/\/\/< Cached texture$/;"	m	struct:sf::RenderTarget::StatesCache
+m_cache	SFML/Graphics/RenderTarget.hpp	/^    StatesCache m_cache;       \/\/\/< Render states cache$/;"	m	class:sf::RenderTarget
+m_defaultView	SFML/Graphics/RenderTarget.hpp	/^    View        m_defaultView; \/\/\/< Default view$/;"	m	class:sf::RenderTarget
+m_view	SFML/Graphics/RenderTarget.hpp	/^    View        m_view;        \/\/\/< Current view$/;"	m	class:sf::RenderTarget
+sf	SFML/Graphics/RenderTarget.hpp	/^namespace sf$/;"	n
+useVertexCache	SFML/Graphics/RenderTarget.hpp	/^        bool      useVertexCache; \/\/\/< Did we previously use the vertex cache?$/;"	m	struct:sf::RenderTarget::StatesCache
+vertexCache	SFML/Graphics/RenderTarget.hpp	/^        Vertex    vertexCache[VertexCacheSize]; \/\/\/< Pre-transformed vertices cache$/;"	m	struct:sf::RenderTarget::StatesCache
+viewChanged	SFML/Graphics/RenderTarget.hpp	/^        bool      viewChanged;    \/\/\/< Has the current view changed since last draw?$/;"	m	struct:sf::RenderTarget::StatesCache
+RenderTexture	SFML/Graphics/RenderTexture.hpp	/^class SFML_GRAPHICS_API RenderTexture : public RenderTarget$/;"	c	namespace:sf
+SFML_RENDERTEXTURE_HPP	SFML/Graphics/RenderTexture.hpp	/^#define SFML_RENDERTEXTURE_HPP$/;"	d
+m_impl	SFML/Graphics/RenderTexture.hpp	/^    priv::RenderTextureImpl* m_impl;    \/\/\/< Platform\/hardware specific implementation$/;"	m	class:sf::RenderTexture
+m_texture	SFML/Graphics/RenderTexture.hpp	/^    Texture                  m_texture; \/\/\/< Target texture to draw on$/;"	m	class:sf::RenderTexture
+priv	SFML/Graphics/RenderTexture.hpp	/^namespace priv$/;"	n	namespace:sf
+sf	SFML/Graphics/RenderTexture.hpp	/^namespace sf$/;"	n
+RenderWindow	SFML/Graphics/RenderWindow.hpp	/^class SFML_GRAPHICS_API RenderWindow : public Window, public RenderTarget$/;"	c	namespace:sf
+SFML_RENDERWINDOW_HPP	SFML/Graphics/RenderWindow.hpp	/^#define SFML_RENDERWINDOW_HPP$/;"	d
+sf	SFML/Graphics/RenderWindow.hpp	/^namespace sf$/;"	n
+CurrentTexture	SFML/Graphics/Shader.hpp	/^    static CurrentTextureType CurrentTexture;$/;"	m	class:sf::Shader
+CurrentTextureType	SFML/Graphics/Shader.hpp	/^    struct CurrentTextureType {};$/;"	s	class:sf::Shader
+Fragment	SFML/Graphics/Shader.hpp	/^        Fragment  \/\/\/< Fragment (pixel) shader$/;"	e	enum:sf::Shader::Type
+Geometry	SFML/Graphics/Shader.hpp	/^        Geometry, \/\/\/< Geometry shader$/;"	e	enum:sf::Shader::Type
+SFML_SHADER_HPP	SFML/Graphics/Shader.hpp	/^#define SFML_SHADER_HPP$/;"	d
+Shader	SFML/Graphics/Shader.hpp	/^class SFML_GRAPHICS_API Shader : GlResource, NonCopyable$/;"	c	namespace:sf
+TextureTable	SFML/Graphics/Shader.hpp	/^    typedef std::map<int, const Texture*> TextureTable;$/;"	t	class:sf::Shader
+Type	SFML/Graphics/Shader.hpp	/^    enum Type$/;"	g	class:sf::Shader
+UniformTable	SFML/Graphics/Shader.hpp	/^    typedef std::map<std::string, int> UniformTable;$/;"	t	class:sf::Shader
+Vertex	SFML/Graphics/Shader.hpp	/^        Vertex,   \/\/\/< %Vertex shader$/;"	e	enum:sf::Shader::Type
+m_currentTexture	SFML/Graphics/Shader.hpp	/^    int          m_currentTexture; \/\/\/< Location of the current texture in the shader$/;"	m	class:sf::Shader
+m_shaderProgram	SFML/Graphics/Shader.hpp	/^    unsigned int m_shaderProgram;  \/\/\/< OpenGL identifier for the program$/;"	m	class:sf::Shader
+m_textures	SFML/Graphics/Shader.hpp	/^    TextureTable m_textures;       \/\/\/< Texture variables in the shader, mapped to their location$/;"	m	class:sf::Shader
+m_uniforms	SFML/Graphics/Shader.hpp	/^    UniformTable m_uniforms;       \/\/\/< Parameters location cache$/;"	m	class:sf::Shader
+sf	SFML/Graphics/Shader.hpp	/^namespace sf$/;"	n
+SFML_SHAPE_HPP	SFML/Graphics/Shape.hpp	/^#define SFML_SHAPE_HPP$/;"	d
+Shape	SFML/Graphics/Shape.hpp	/^class SFML_GRAPHICS_API Shape : public Drawable, public Transformable$/;"	c	namespace:sf
+m_bounds	SFML/Graphics/Shape.hpp	/^    FloatRect      m_bounds;           \/\/\/< Bounding rectangle of the whole shape (outline + fill)$/;"	m	class:sf::Shape
+m_fillColor	SFML/Graphics/Shape.hpp	/^    Color          m_fillColor;        \/\/\/< Fill color$/;"	m	class:sf::Shape
+m_insideBounds	SFML/Graphics/Shape.hpp	/^    FloatRect      m_insideBounds;     \/\/\/< Bounding rectangle of the inside (fill)$/;"	m	class:sf::Shape
+m_outlineColor	SFML/Graphics/Shape.hpp	/^    Color          m_outlineColor;     \/\/\/< Outline color$/;"	m	class:sf::Shape
+m_outlineThickness	SFML/Graphics/Shape.hpp	/^    float          m_outlineThickness; \/\/\/< Thickness of the shape's outline$/;"	m	class:sf::Shape
+m_outlineVertices	SFML/Graphics/Shape.hpp	/^    VertexArray    m_outlineVertices;  \/\/\/< Vertex array containing the outline geometry$/;"	m	class:sf::Shape
+m_texture	SFML/Graphics/Shape.hpp	/^    const Texture* m_texture;          \/\/\/< Texture of the shape$/;"	m	class:sf::Shape
+m_textureRect	SFML/Graphics/Shape.hpp	/^    IntRect        m_textureRect;      \/\/\/< Rectangle defining the area of the source texture to display$/;"	m	class:sf::Shape
+m_vertices	SFML/Graphics/Shape.hpp	/^    VertexArray    m_vertices;         \/\/\/< Vertex array containing the fill geometry$/;"	m	class:sf::Shape
+sf	SFML/Graphics/Shape.hpp	/^namespace sf$/;"	n
+SFML_SPRITE_HPP	SFML/Graphics/Sprite.hpp	/^#define SFML_SPRITE_HPP$/;"	d
+Sprite	SFML/Graphics/Sprite.hpp	/^class SFML_GRAPHICS_API Sprite : public Drawable, public Transformable$/;"	c	namespace:sf
+m_texture	SFML/Graphics/Sprite.hpp	/^    const Texture* m_texture;     \/\/\/< Texture of the sprite$/;"	m	class:sf::Sprite
+m_textureRect	SFML/Graphics/Sprite.hpp	/^    IntRect        m_textureRect; \/\/\/< Rectangle defining the area of the source texture to display$/;"	m	class:sf::Sprite
+m_vertices	SFML/Graphics/Sprite.hpp	/^    Vertex         m_vertices[4]; \/\/\/< Vertices defining the sprite's geometry$/;"	m	class:sf::Sprite
+sf	SFML/Graphics/Sprite.hpp	/^namespace sf$/;"	n
+Bold	SFML/Graphics/Text.hpp	/^        Bold          = 1 << 0, \/\/\/< Bold characters$/;"	e	enum:sf::Text::Style
+Italic	SFML/Graphics/Text.hpp	/^        Italic        = 1 << 1, \/\/\/< Italic characters$/;"	e	enum:sf::Text::Style
+Regular	SFML/Graphics/Text.hpp	/^        Regular       = 0,      \/\/\/< Regular characters, no style$/;"	e	enum:sf::Text::Style
+SFML_TEXT_HPP	SFML/Graphics/Text.hpp	/^#define SFML_TEXT_HPP$/;"	d
+StrikeThrough	SFML/Graphics/Text.hpp	/^        StrikeThrough = 1 << 3  \/\/\/< Strike through characters$/;"	e	enum:sf::Text::Style
+Style	SFML/Graphics/Text.hpp	/^    enum Style$/;"	g	class:sf::Text
+Text	SFML/Graphics/Text.hpp	/^class SFML_GRAPHICS_API Text : public Drawable, public Transformable$/;"	c	namespace:sf
+Underlined	SFML/Graphics/Text.hpp	/^        Underlined    = 1 << 2, \/\/\/< Underlined characters$/;"	e	enum:sf::Text::Style
+m_bounds	SFML/Graphics/Text.hpp	/^    mutable FloatRect   m_bounds;             \/\/\/< Bounding rectangle of the text (in local coordinates)$/;"	m	class:sf::Text
+m_characterSize	SFML/Graphics/Text.hpp	/^    unsigned int        m_characterSize;      \/\/\/< Base size of characters, in pixels$/;"	m	class:sf::Text
+m_fillColor	SFML/Graphics/Text.hpp	/^    Color               m_fillColor;          \/\/\/< Text fill color$/;"	m	class:sf::Text
+m_font	SFML/Graphics/Text.hpp	/^    const Font*         m_font;               \/\/\/< Font used to display the string$/;"	m	class:sf::Text
+m_geometryNeedUpdate	SFML/Graphics/Text.hpp	/^    mutable bool        m_geometryNeedUpdate; \/\/\/< Does the geometry need to be recomputed?$/;"	m	class:sf::Text
+m_outlineColor	SFML/Graphics/Text.hpp	/^    Color               m_outlineColor;       \/\/\/< Text outline color$/;"	m	class:sf::Text
+m_outlineThickness	SFML/Graphics/Text.hpp	/^    float               m_outlineThickness;   \/\/\/< Thickness of the text's outline$/;"	m	class:sf::Text
+m_outlineVertices	SFML/Graphics/Text.hpp	/^    mutable VertexArray m_outlineVertices;    \/\/\/< Vertex array containing the outline geometry$/;"	m	class:sf::Text
+m_string	SFML/Graphics/Text.hpp	/^    String              m_string;             \/\/\/< String to display$/;"	m	class:sf::Text
+m_style	SFML/Graphics/Text.hpp	/^    Uint32              m_style;              \/\/\/< Text style (see Style enum)$/;"	m	class:sf::Text
+m_vertices	SFML/Graphics/Text.hpp	/^    mutable VertexArray m_vertices;           \/\/\/< Vertex array containing the fill geometry$/;"	m	class:sf::Text
+sf	SFML/Graphics/Text.hpp	/^namespace sf$/;"	n
+CoordinateType	SFML/Graphics/Texture.hpp	/^    enum CoordinateType$/;"	g	class:sf::Texture
+Normalized	SFML/Graphics/Texture.hpp	/^        Normalized, \/\/\/< Texture coordinates in range [0 .. 1]$/;"	e	enum:sf::Texture::CoordinateType
+Pixels	SFML/Graphics/Texture.hpp	/^        Pixels      \/\/\/< Texture coordinates in range [0 .. size]$/;"	e	enum:sf::Texture::CoordinateType
+SFML_TEXTURE_HPP	SFML/Graphics/Texture.hpp	/^#define SFML_TEXTURE_HPP$/;"	d
+Texture	SFML/Graphics/Texture.hpp	/^class SFML_GRAPHICS_API Texture : GlResource$/;"	c	namespace:sf
+m_actualSize	SFML/Graphics/Texture.hpp	/^    Vector2u     m_actualSize;    \/\/\/< Actual texture size (can be greater than public size because of padding)$/;"	m	class:sf::Texture
+m_cacheId	SFML/Graphics/Texture.hpp	/^    Uint64       m_cacheId;       \/\/\/< Unique number that identifies the texture to the render target's cache$/;"	m	class:sf::Texture
+m_fboAttachment	SFML/Graphics/Texture.hpp	/^    bool         m_fboAttachment; \/\/\/< Is this texture owned by a framebuffer object?$/;"	m	class:sf::Texture
+m_hasMipmap	SFML/Graphics/Texture.hpp	/^    bool         m_hasMipmap;     \/\/\/< Has the mipmap been generated?$/;"	m	class:sf::Texture
+m_isRepeated	SFML/Graphics/Texture.hpp	/^    bool         m_isRepeated;    \/\/\/< Is the texture in repeat mode?$/;"	m	class:sf::Texture
+m_isSmooth	SFML/Graphics/Texture.hpp	/^    bool         m_isSmooth;      \/\/\/< Status of the smooth filter$/;"	m	class:sf::Texture
+m_pixelsFlipped	SFML/Graphics/Texture.hpp	/^    mutable bool m_pixelsFlipped; \/\/\/< To work around the inconsistency in Y orientation$/;"	m	class:sf::Texture
+m_sRgb	SFML/Graphics/Texture.hpp	/^    bool         m_sRgb;          \/\/\/< Should the texture source be converted from sRGB?$/;"	m	class:sf::Texture
+m_size	SFML/Graphics/Texture.hpp	/^    Vector2u     m_size;          \/\/\/< Public texture size$/;"	m	class:sf::Texture
+m_texture	SFML/Graphics/Texture.hpp	/^    unsigned int m_texture;       \/\/\/< Internal texture identifier$/;"	m	class:sf::Texture
+sf	SFML/Graphics/Texture.hpp	/^namespace sf$/;"	n
+Identity	SFML/Graphics/Transform.hpp	/^    static const Transform Identity; \/\/\/< The identity transform (does nothing)$/;"	m	class:sf::Transform
+SFML_TRANSFORM_HPP	SFML/Graphics/Transform.hpp	/^#define SFML_TRANSFORM_HPP$/;"	d
+Transform	SFML/Graphics/Transform.hpp	/^class SFML_GRAPHICS_API Transform$/;"	c	namespace:sf
+m_matrix	SFML/Graphics/Transform.hpp	/^    float m_matrix[16]; \/\/\/< 4x4 matrix defining the transformation$/;"	m	class:sf::Transform
+sf	SFML/Graphics/Transform.hpp	/^namespace sf$/;"	n
+SFML_TRANSFORMABLE_HPP	SFML/Graphics/Transformable.hpp	/^#define SFML_TRANSFORMABLE_HPP$/;"	d
+Transformable	SFML/Graphics/Transformable.hpp	/^class SFML_GRAPHICS_API Transformable$/;"	c	namespace:sf
+m_inverseTransform	SFML/Graphics/Transformable.hpp	/^    mutable Transform m_inverseTransform;           \/\/\/< Combined transformation of the object$/;"	m	class:sf::Transformable
+m_inverseTransformNeedUpdate	SFML/Graphics/Transformable.hpp	/^    mutable bool      m_inverseTransformNeedUpdate; \/\/\/< Does the transform need to be recomputed?$/;"	m	class:sf::Transformable
+m_origin	SFML/Graphics/Transformable.hpp	/^    Vector2f          m_origin;                     \/\/\/< Origin of translation\/rotation\/scaling of the object$/;"	m	class:sf::Transformable
+m_position	SFML/Graphics/Transformable.hpp	/^    Vector2f          m_position;                   \/\/\/< Position of the object in the 2D world$/;"	m	class:sf::Transformable
+m_rotation	SFML/Graphics/Transformable.hpp	/^    float             m_rotation;                   \/\/\/< Orientation of the object, in degrees$/;"	m	class:sf::Transformable
+m_scale	SFML/Graphics/Transformable.hpp	/^    Vector2f          m_scale;                      \/\/\/< Scale of the object$/;"	m	class:sf::Transformable
+m_transform	SFML/Graphics/Transformable.hpp	/^    mutable Transform m_transform;                  \/\/\/< Combined transformation of the object$/;"	m	class:sf::Transformable
+m_transformNeedUpdate	SFML/Graphics/Transformable.hpp	/^    mutable bool      m_transformNeedUpdate;        \/\/\/< Does the transform need to be recomputed?$/;"	m	class:sf::Transformable
+sf	SFML/Graphics/Transformable.hpp	/^namespace sf$/;"	n
+SFML_VERTEX_HPP	SFML/Graphics/Vertex.hpp	/^#define SFML_VERTEX_HPP$/;"	d
+Vertex	SFML/Graphics/Vertex.hpp	/^class SFML_GRAPHICS_API Vertex$/;"	c	namespace:sf
+color	SFML/Graphics/Vertex.hpp	/^    Color     color;     \/\/\/< Color of the vertex$/;"	m	class:sf::Vertex
+position	SFML/Graphics/Vertex.hpp	/^    Vector2f  position;  \/\/\/< 2D position of the vertex$/;"	m	class:sf::Vertex
+sf	SFML/Graphics/Vertex.hpp	/^namespace sf$/;"	n
+texCoords	SFML/Graphics/Vertex.hpp	/^    Vector2f  texCoords; \/\/\/< Coordinates of the texture's pixel to map to the vertex$/;"	m	class:sf::Vertex
+SFML_VERTEXARRAY_HPP	SFML/Graphics/VertexArray.hpp	/^#define SFML_VERTEXARRAY_HPP$/;"	d
+VertexArray	SFML/Graphics/VertexArray.hpp	/^class SFML_GRAPHICS_API VertexArray : public Drawable$/;"	c	namespace:sf
+m_primitiveType	SFML/Graphics/VertexArray.hpp	/^    PrimitiveType       m_primitiveType; \/\/\/< Type of primitives to draw$/;"	m	class:sf::VertexArray
+m_vertices	SFML/Graphics/VertexArray.hpp	/^    std::vector<Vertex> m_vertices;      \/\/\/< Vertices contained in the array$/;"	m	class:sf::VertexArray
+sf	SFML/Graphics/VertexArray.hpp	/^namespace sf$/;"	n
+SFML_VIEW_HPP	SFML/Graphics/View.hpp	/^#define SFML_VIEW_HPP$/;"	d
+View	SFML/Graphics/View.hpp	/^class SFML_GRAPHICS_API View$/;"	c	namespace:sf
+m_center	SFML/Graphics/View.hpp	/^    Vector2f          m_center;              \/\/\/< Center of the view, in scene coordinates$/;"	m	class:sf::View
+m_invTransformUpdated	SFML/Graphics/View.hpp	/^    mutable bool      m_invTransformUpdated; \/\/\/< Internal state telling if the inverse transform needs to be updated$/;"	m	class:sf::View
+m_inverseTransform	SFML/Graphics/View.hpp	/^    mutable Transform m_inverseTransform;    \/\/\/< Precomputed inverse projection transform corresponding to the view$/;"	m	class:sf::View
+m_rotation	SFML/Graphics/View.hpp	/^    float             m_rotation;            \/\/\/< Angle of rotation of the view rectangle, in degrees$/;"	m	class:sf::View
+m_size	SFML/Graphics/View.hpp	/^    Vector2f          m_size;                \/\/\/< Size of the view, in scene coordinates$/;"	m	class:sf::View
+m_transform	SFML/Graphics/View.hpp	/^    mutable Transform m_transform;           \/\/\/< Precomputed projection transform corresponding to the view$/;"	m	class:sf::View
+m_transformUpdated	SFML/Graphics/View.hpp	/^    mutable bool      m_transformUpdated;    \/\/\/< Internal state telling if the transform needs to be updated$/;"	m	class:sf::View
+m_viewport	SFML/Graphics/View.hpp	/^    FloatRect         m_viewport;            \/\/\/< Viewport rectangle, expressed as a factor of the render-target's size$/;"	m	class:sf::View
+sf	SFML/Graphics/View.hpp	/^namespace sf$/;"	n
+SFML_MAIN_HPP	SFML/Main.hpp	/^#define SFML_MAIN_HPP$/;"	d
+main	SFML/Main.hpp	/^    #define main /;"	d
+SFML_NETWORK_HPP	SFML/Network.hpp	/^#define SFML_NETWORK_HPP$/;"	d
+SFML_NETWORK_API	SFML/Network/Export.hpp	/^    #define SFML_NETWORK_API /;"	d
+SFML_NETWORK_EXPORT_HPP	SFML/Network/Export.hpp	/^#define SFML_NETWORK_EXPORT_HPP$/;"	d
+Ascii	SFML/Network/Ftp.hpp	/^        Ascii,  \/\/\/< Text mode using ASCII encoding$/;"	e	enum:sf::Ftp::TransferMode
+BadCommandSequence	SFML/Network/Ftp.hpp	/^            BadCommandSequence      = 503, \/\/\/< Bad sequence of commands$/;"	e	enum:sf::Ftp::Response::Status
+Binary	SFML/Network/Ftp.hpp	/^        Binary, \/\/\/< Binary mode (file is transfered as a sequence of bytes)$/;"	e	enum:sf::Ftp::TransferMode
+ClosingConnection	SFML/Network/Ftp.hpp	/^            ClosingConnection     = 221, \/\/\/< Service closing control connection$/;"	e	enum:sf::Ftp::Response::Status
+ClosingDataConnection	SFML/Network/Ftp.hpp	/^            ClosingDataConnection = 226, \/\/\/< Closing data connection, requested file action successful$/;"	e	enum:sf::Ftp::Response::Status
+CommandNotImplemented	SFML/Network/Ftp.hpp	/^            CommandNotImplemented   = 502, \/\/\/< Command not implemented$/;"	e	enum:sf::Ftp::Response::Status
+CommandUnknown	SFML/Network/Ftp.hpp	/^            CommandUnknown          = 500, \/\/\/< Syntax error, command unrecognized$/;"	e	enum:sf::Ftp::Response::Status
+ConnectionClosed	SFML/Network/Ftp.hpp	/^            ConnectionClosed = 1002, \/\/\/< Not part of the FTP standard, generated by SFML when the low-level socket connection is unexpectedly closed$/;"	e	enum:sf::Ftp::Response::Status
+ConnectionFailed	SFML/Network/Ftp.hpp	/^            ConnectionFailed = 1001, \/\/\/< Not part of the FTP standard, generated by SFML when the low-level socket connection with the server fails$/;"	e	enum:sf::Ftp::Response::Status
+DataConnectionAlreadyOpened	SFML/Network/Ftp.hpp	/^            DataConnectionAlreadyOpened = 125, \/\/\/< Data connection already opened, transfer starting$/;"	e	enum:sf::Ftp::Response::Status
+DataConnectionOpened	SFML/Network/Ftp.hpp	/^            DataConnectionOpened  = 225, \/\/\/< Data connection open, no transfer in progress$/;"	e	enum:sf::Ftp::Response::Status
+DataConnectionUnavailable	SFML/Network/Ftp.hpp	/^            DataConnectionUnavailable = 425, \/\/\/< Can't open data connection$/;"	e	enum:sf::Ftp::Response::Status
+DirectoryOk	SFML/Network/Ftp.hpp	/^            DirectoryOk           = 257, \/\/\/< PATHNAME created$/;"	e	enum:sf::Ftp::Response::Status
+DirectoryResponse	SFML/Network/Ftp.hpp	/^    class SFML_NETWORK_API DirectoryResponse : public Response$/;"	c	class:sf::Ftp
+DirectoryStatus	SFML/Network/Ftp.hpp	/^            DirectoryStatus       = 212, \/\/\/< Directory status$/;"	e	enum:sf::Ftp::Response::Status
+Ebcdic	SFML/Network/Ftp.hpp	/^        Ebcdic  \/\/\/< Text mode using EBCDIC encoding$/;"	e	enum:sf::Ftp::TransferMode
+EnteringPassiveMode	SFML/Network/Ftp.hpp	/^            EnteringPassiveMode   = 227, \/\/\/< Entering passive mode$/;"	e	enum:sf::Ftp::Response::Status
+FileActionAborted	SFML/Network/Ftp.hpp	/^            FileActionAborted         = 450, \/\/\/< Requested file action not taken$/;"	e	enum:sf::Ftp::Response::Status
+FileActionOk	SFML/Network/Ftp.hpp	/^            FileActionOk          = 250, \/\/\/< Requested file action ok$/;"	e	enum:sf::Ftp::Response::Status
+FileStatus	SFML/Network/Ftp.hpp	/^            FileStatus            = 213, \/\/\/< File status$/;"	e	enum:sf::Ftp::Response::Status
+FileUnavailable	SFML/Network/Ftp.hpp	/^            FileUnavailable         = 550, \/\/\/< Requested action not taken, file unavailable$/;"	e	enum:sf::Ftp::Response::Status
+FilenameNotAllowed	SFML/Network/Ftp.hpp	/^            FilenameNotAllowed      = 553, \/\/\/< Requested action not taken, file name not allowed$/;"	e	enum:sf::Ftp::Response::Status
+Ftp	SFML/Network/Ftp.hpp	/^class SFML_NETWORK_API Ftp : NonCopyable$/;"	c	namespace:sf
+HelpMessage	SFML/Network/Ftp.hpp	/^            HelpMessage           = 214, \/\/\/< Help message$/;"	e	enum:sf::Ftp::Response::Status
+InsufficientStorageSpace	SFML/Network/Ftp.hpp	/^            InsufficientStorageSpace  = 452, \/\/\/< Requested action not taken; insufficient storage space in system, file unavailable$/;"	e	enum:sf::Ftp::Response::Status
+InvalidFile	SFML/Network/Ftp.hpp	/^            InvalidFile      = 1003  \/\/\/< Not part of the FTP standard, generated by SFML when a local file cannot be read or written$/;"	e	enum:sf::Ftp::Response::Status
+InvalidResponse	SFML/Network/Ftp.hpp	/^            InvalidResponse  = 1000, \/\/\/< Not part of the FTP standard, generated by SFML when a received response cannot be parsed$/;"	e	enum:sf::Ftp::Response::Status
+ListingResponse	SFML/Network/Ftp.hpp	/^    class SFML_NETWORK_API ListingResponse : public Response$/;"	c	class:sf::Ftp
+LocalError	SFML/Network/Ftp.hpp	/^            LocalError                = 451, \/\/\/< Requested action aborted, local error in processing$/;"	e	enum:sf::Ftp::Response::Status
+LoggedIn	SFML/Network/Ftp.hpp	/^            LoggedIn              = 230, \/\/\/< User logged in, proceed. Logged out if appropriate$/;"	e	enum:sf::Ftp::Response::Status
+NeedAccountToLogIn	SFML/Network/Ftp.hpp	/^            NeedAccountToLogIn = 332, \/\/\/< Need account for login$/;"	e	enum:sf::Ftp::Response::Status
+NeedAccountToStore	SFML/Network/Ftp.hpp	/^            NeedAccountToStore      = 532, \/\/\/< Need account for storing files$/;"	e	enum:sf::Ftp::Response::Status
+NeedInformation	SFML/Network/Ftp.hpp	/^            NeedInformation    = 350, \/\/\/< Requested file action pending further information$/;"	e	enum:sf::Ftp::Response::Status
+NeedPassword	SFML/Network/Ftp.hpp	/^            NeedPassword       = 331, \/\/\/< User name ok, need password$/;"	e	enum:sf::Ftp::Response::Status
+NotEnoughMemory	SFML/Network/Ftp.hpp	/^            NotEnoughMemory         = 552, \/\/\/< Requested file action aborted, exceeded storage allocation$/;"	e	enum:sf::Ftp::Response::Status
+NotLoggedIn	SFML/Network/Ftp.hpp	/^            NotLoggedIn             = 530, \/\/\/< Not logged in$/;"	e	enum:sf::Ftp::Response::Status
+Ok	SFML/Network/Ftp.hpp	/^            Ok                    = 200, \/\/\/< Command ok$/;"	e	enum:sf::Ftp::Response::Status
+OpeningDataConnection	SFML/Network/Ftp.hpp	/^            OpeningDataConnection       = 150, \/\/\/< File status ok, about to open data connection$/;"	e	enum:sf::Ftp::Response::Status
+PageTypeUnknown	SFML/Network/Ftp.hpp	/^            PageTypeUnknown         = 551, \/\/\/< Requested action aborted, page type unknown$/;"	e	enum:sf::Ftp::Response::Status
+ParameterNotImplemented	SFML/Network/Ftp.hpp	/^            ParameterNotImplemented = 504, \/\/\/< Command not implemented for that parameter$/;"	e	enum:sf::Ftp::Response::Status
+ParametersUnknown	SFML/Network/Ftp.hpp	/^            ParametersUnknown       = 501, \/\/\/< Syntax error in parameters or arguments$/;"	e	enum:sf::Ftp::Response::Status
+PointlessCommand	SFML/Network/Ftp.hpp	/^            PointlessCommand      = 202, \/\/\/< Command not implemented$/;"	e	enum:sf::Ftp::Response::Status
+Response	SFML/Network/Ftp.hpp	/^    class SFML_NETWORK_API Response$/;"	c	class:sf::Ftp
+RestartMarkerReply	SFML/Network/Ftp.hpp	/^            RestartMarkerReply          = 110, \/\/\/< Restart marker reply$/;"	e	enum:sf::Ftp::Response::Status
+SFML_FTP_HPP	SFML/Network/Ftp.hpp	/^#define SFML_FTP_HPP$/;"	d
+ServiceReady	SFML/Network/Ftp.hpp	/^            ServiceReady          = 220, \/\/\/< Service ready for new user$/;"	e	enum:sf::Ftp::Response::Status
+ServiceReadySoon	SFML/Network/Ftp.hpp	/^            ServiceReadySoon            = 120, \/\/\/< Service ready in N minutes$/;"	e	enum:sf::Ftp::Response::Status
+ServiceUnavailable	SFML/Network/Ftp.hpp	/^            ServiceUnavailable        = 421, \/\/\/< Service not available, closing control connection$/;"	e	enum:sf::Ftp::Response::Status
+Status	SFML/Network/Ftp.hpp	/^        enum Status$/;"	g	class:sf::Ftp::Response
+SystemStatus	SFML/Network/Ftp.hpp	/^            SystemStatus          = 211, \/\/\/< System status, or system help reply$/;"	e	enum:sf::Ftp::Response::Status
+SystemType	SFML/Network/Ftp.hpp	/^            SystemType            = 215, \/\/\/< NAME system type, where NAME is an official system name from the list in the Assigned Numbers document$/;"	e	enum:sf::Ftp::Response::Status
+TransferAborted	SFML/Network/Ftp.hpp	/^            TransferAborted           = 426, \/\/\/< Connection closed, transfer aborted$/;"	e	enum:sf::Ftp::Response::Status
+TransferMode	SFML/Network/Ftp.hpp	/^    enum TransferMode$/;"	g	class:sf::Ftp
+m_commandSocket	SFML/Network/Ftp.hpp	/^    TcpSocket   m_commandSocket; \/\/\/< Socket holding the control connection with the server$/;"	m	class:sf::Ftp
+m_directory	SFML/Network/Ftp.hpp	/^        std::string m_directory; \/\/\/< Directory extracted from the response message$/;"	m	class:sf::Ftp::DirectoryResponse
+m_listing	SFML/Network/Ftp.hpp	/^        std::vector<std::string> m_listing; \/\/\/< Directory\/file names extracted from the data$/;"	m	class:sf::Ftp::ListingResponse
+m_message	SFML/Network/Ftp.hpp	/^        std::string m_message; \/\/\/< Last message received from the server$/;"	m	class:sf::Ftp::Response
+m_receiveBuffer	SFML/Network/Ftp.hpp	/^    std::string m_receiveBuffer; \/\/\/< Received command data that is yet to be processed$/;"	m	class:sf::Ftp
+m_status	SFML/Network/Ftp.hpp	/^        Status      m_status;  \/\/\/< Status code returned from the server$/;"	m	class:sf::Ftp::Response
+sf	SFML/Network/Ftp.hpp	/^namespace sf$/;"	n
+Accepted	SFML/Network/Http.hpp	/^            Accepted       = 202, \/\/\/< The request has been accepted, but will be processed later by the server$/;"	e	enum:sf::Http::Response::Status
+BadGateway	SFML/Network/Http.hpp	/^            BadGateway          = 502, \/\/\/< The gateway server has received an error from the source server$/;"	e	enum:sf::Http::Response::Status
+BadRequest	SFML/Network/Http.hpp	/^            BadRequest          = 400, \/\/\/< The server couldn't understand the request (syntax error)$/;"	e	enum:sf::Http::Response::Status
+ConnectionFailed	SFML/Network/Http.hpp	/^            ConnectionFailed = 1001  \/\/\/< Connection with server failed$/;"	e	enum:sf::Http::Response::Status
+Created	SFML/Network/Http.hpp	/^            Created        = 201, \/\/\/< The resource has successfully been created$/;"	e	enum:sf::Http::Response::Status
+Delete	SFML/Network/Http.hpp	/^            Delete \/\/\/< Request in delete mode, useful for a REST API$/;"	e	enum:sf::Http::Request::Method
+FieldTable	SFML/Network/Http.hpp	/^        typedef std::map<std::string, std::string> FieldTable;$/;"	t	class:sf::Http::Request
+FieldTable	SFML/Network/Http.hpp	/^        typedef std::map<std::string, std::string> FieldTable;$/;"	t	class:sf::Http::Response
+Forbidden	SFML/Network/Http.hpp	/^            Forbidden           = 403, \/\/\/< The requested page cannot be accessed at all, even with authentication$/;"	e	enum:sf::Http::Response::Status
+GatewayTimeout	SFML/Network/Http.hpp	/^            GatewayTimeout      = 504, \/\/\/< The gateway server couldn't receive a response from the source server$/;"	e	enum:sf::Http::Response::Status
+Get	SFML/Network/Http.hpp	/^            Get,   \/\/\/< Request in get mode, standard method to retrieve a page$/;"	e	enum:sf::Http::Request::Method
+Head	SFML/Network/Http.hpp	/^            Head,  \/\/\/< Request a page's header only$/;"	e	enum:sf::Http::Request::Method
+Http	SFML/Network/Http.hpp	/^class SFML_NETWORK_API Http : NonCopyable$/;"	c	namespace:sf
+InternalServerError	SFML/Network/Http.hpp	/^            InternalServerError = 500, \/\/\/< The server encountered an unexpected error$/;"	e	enum:sf::Http::Response::Status
+InvalidResponse	SFML/Network/Http.hpp	/^            InvalidResponse  = 1000, \/\/\/< Response is not a valid HTTP one$/;"	e	enum:sf::Http::Response::Status
+Method	SFML/Network/Http.hpp	/^        enum Method$/;"	g	class:sf::Http::Request
+MovedPermanently	SFML/Network/Http.hpp	/^            MovedPermanently = 301, \/\/\/< The requested page has permanently moved to a new location$/;"	e	enum:sf::Http::Response::Status
+MovedTemporarily	SFML/Network/Http.hpp	/^            MovedTemporarily = 302, \/\/\/< The requested page has temporarily moved to a new location$/;"	e	enum:sf::Http::Response::Status
+MultipleChoices	SFML/Network/Http.hpp	/^            MultipleChoices  = 300, \/\/\/< The requested page can be accessed from several locations$/;"	e	enum:sf::Http::Response::Status
+NoContent	SFML/Network/Http.hpp	/^            NoContent      = 204, \/\/\/< The server didn't send any data in return$/;"	e	enum:sf::Http::Response::Status
+NotFound	SFML/Network/Http.hpp	/^            NotFound            = 404, \/\/\/< The requested page doesn't exist$/;"	e	enum:sf::Http::Response::Status
+NotImplemented	SFML/Network/Http.hpp	/^            NotImplemented      = 501, \/\/\/< The server doesn't implement a requested feature$/;"	e	enum:sf::Http::Response::Status
+NotModified	SFML/Network/Http.hpp	/^            NotModified      = 304, \/\/\/< For conditional requests, means the requested page hasn't changed and doesn't need to be refreshed$/;"	e	enum:sf::Http::Response::Status
+Ok	SFML/Network/Http.hpp	/^            Ok             = 200, \/\/\/< Most common code returned when operation was successful$/;"	e	enum:sf::Http::Response::Status
+PartialContent	SFML/Network/Http.hpp	/^            PartialContent = 206, \/\/\/< The server has sent a part of the resource, as a response to a partial GET request$/;"	e	enum:sf::Http::Response::Status
+Post	SFML/Network/Http.hpp	/^            Post,  \/\/\/< Request in post mode, usually to send data to a page$/;"	e	enum:sf::Http::Request::Method
+Put	SFML/Network/Http.hpp	/^            Put,   \/\/\/< Request in put mode, useful for a REST API$/;"	e	enum:sf::Http::Request::Method
+RangeNotSatisfiable	SFML/Network/Http.hpp	/^            RangeNotSatisfiable = 407, \/\/\/< The server can't satisfy the partial GET request (with a "Range" header field)$/;"	e	enum:sf::Http::Response::Status
+Request	SFML/Network/Http.hpp	/^    class SFML_NETWORK_API Request$/;"	c	class:sf::Http
+ResetContent	SFML/Network/Http.hpp	/^            ResetContent   = 205, \/\/\/< The server informs the client that it should clear the view (form) that caused the request to be sent$/;"	e	enum:sf::Http::Response::Status
+Response	SFML/Network/Http.hpp	/^    class SFML_NETWORK_API Response$/;"	c	class:sf::Http
+SFML_HTTP_HPP	SFML/Network/Http.hpp	/^#define SFML_HTTP_HPP$/;"	d
+ServiceNotAvailable	SFML/Network/Http.hpp	/^            ServiceNotAvailable = 503, \/\/\/< The server is temporarily unavailable (overloaded, in maintenance, ...)$/;"	e	enum:sf::Http::Response::Status
+Status	SFML/Network/Http.hpp	/^        enum Status$/;"	g	class:sf::Http::Response
+Unauthorized	SFML/Network/Http.hpp	/^            Unauthorized        = 401, \/\/\/< The requested page needs an authentication to be accessed$/;"	e	enum:sf::Http::Response::Status
+VersionNotSupported	SFML/Network/Http.hpp	/^            VersionNotSupported = 505, \/\/\/< The server doesn't support the requested HTTP version$/;"	e	enum:sf::Http::Response::Status
+m_body	SFML/Network/Http.hpp	/^        std::string  m_body;         \/\/\/< Body of the request$/;"	m	class:sf::Http::Request
+m_body	SFML/Network/Http.hpp	/^        std::string  m_body;         \/\/\/< Body of the response$/;"	m	class:sf::Http::Response
+m_connection	SFML/Network/Http.hpp	/^    TcpSocket      m_connection; \/\/\/< Connection to the host$/;"	m	class:sf::Http
+m_fields	SFML/Network/Http.hpp	/^        FieldTable   m_fields;       \/\/\/< Fields of the header associated to their value$/;"	m	class:sf::Http::Request
+m_fields	SFML/Network/Http.hpp	/^        FieldTable   m_fields;       \/\/\/< Fields of the header$/;"	m	class:sf::Http::Response
+m_host	SFML/Network/Http.hpp	/^    IpAddress      m_host;       \/\/\/< Web host address$/;"	m	class:sf::Http
+m_hostName	SFML/Network/Http.hpp	/^    std::string    m_hostName;   \/\/\/< Web host name$/;"	m	class:sf::Http
+m_majorVersion	SFML/Network/Http.hpp	/^        unsigned int m_majorVersion; \/\/\/< Major HTTP version$/;"	m	class:sf::Http::Request
+m_majorVersion	SFML/Network/Http.hpp	/^        unsigned int m_majorVersion; \/\/\/< Major HTTP version$/;"	m	class:sf::Http::Response
+m_method	SFML/Network/Http.hpp	/^        Method       m_method;       \/\/\/< Method to use for the request$/;"	m	class:sf::Http::Request
+m_minorVersion	SFML/Network/Http.hpp	/^        unsigned int m_minorVersion; \/\/\/< Minor HTTP version$/;"	m	class:sf::Http::Request
+m_minorVersion	SFML/Network/Http.hpp	/^        unsigned int m_minorVersion; \/\/\/< Minor HTTP version$/;"	m	class:sf::Http::Response
+m_port	SFML/Network/Http.hpp	/^    unsigned short m_port;       \/\/\/< Port used for connection with host$/;"	m	class:sf::Http
+m_status	SFML/Network/Http.hpp	/^        Status       m_status;       \/\/\/< Status code$/;"	m	class:sf::Http::Response
+m_uri	SFML/Network/Http.hpp	/^        std::string  m_uri;          \/\/\/< Target URI of the request$/;"	m	class:sf::Http::Request
+sf	SFML/Network/Http.hpp	/^namespace sf$/;"	n
+Any	SFML/Network/IpAddress.hpp	/^    static const IpAddress Any;       \/\/\/< Value representing any address (0.0.0.0)$/;"	m	class:sf::IpAddress
+Broadcast	SFML/Network/IpAddress.hpp	/^    static const IpAddress Broadcast; \/\/\/< The "broadcast" address (for sending UDP messages to everyone on a local network)$/;"	m	class:sf::IpAddress
+IpAddress	SFML/Network/IpAddress.hpp	/^class SFML_NETWORK_API IpAddress$/;"	c	namespace:sf
+LocalHost	SFML/Network/IpAddress.hpp	/^    static const IpAddress LocalHost; \/\/\/< The "localhost" address (for connecting a computer to itself locally)$/;"	m	class:sf::IpAddress
+None	SFML/Network/IpAddress.hpp	/^    static const IpAddress None;      \/\/\/< Value representing an empty\/invalid address$/;"	m	class:sf::IpAddress
+SFML_IPADDRESS_HPP	SFML/Network/IpAddress.hpp	/^#define SFML_IPADDRESS_HPP$/;"	d
+m_address	SFML/Network/IpAddress.hpp	/^    Uint32 m_address; \/\/\/< Address stored as an unsigned 32 bits integer$/;"	m	class:sf::IpAddress
+m_valid	SFML/Network/IpAddress.hpp	/^    bool   m_valid;   \/\/\/< Is the address valid?$/;"	m	class:sf::IpAddress
+sf	SFML/Network/IpAddress.hpp	/^namespace sf$/;"	n
+BoolType	SFML/Network/Packet.hpp	/^    typedef bool (Packet::*BoolType)(std::size_t);$/;"	t	class:sf::Packet
+Packet	SFML/Network/Packet.hpp	/^class SFML_NETWORK_API Packet$/;"	c	namespace:sf
+SFML_PACKET_HPP	SFML/Network/Packet.hpp	/^#define SFML_PACKET_HPP$/;"	d
+m_data	SFML/Network/Packet.hpp	/^    std::vector<char> m_data;    \/\/\/< Data stored in the packet$/;"	m	class:sf::Packet
+m_isValid	SFML/Network/Packet.hpp	/^    bool              m_isValid; \/\/\/< Reading state of the packet$/;"	m	class:sf::Packet
+m_readPos	SFML/Network/Packet.hpp	/^    std::size_t       m_readPos; \/\/\/< Current reading position in the packet$/;"	m	class:sf::Packet
+m_sendPos	SFML/Network/Packet.hpp	/^    std::size_t       m_sendPos; \/\/\/< Current send position in the packet (for handling partial sends)$/;"	m	class:sf::Packet
+sf	SFML/Network/Packet.hpp	/^namespace sf$/;"	n
+AnyPort	SFML/Network/Socket.hpp	/^        AnyPort = 0 \/\/\/< Special value that tells the system to pick any available port$/;"	e	enum:sf::Socket::__anon2
+Disconnected	SFML/Network/Socket.hpp	/^        Disconnected, \/\/\/< The TCP socket has been disconnected$/;"	e	enum:sf::Socket::Status
+Done	SFML/Network/Socket.hpp	/^        Done,         \/\/\/< The socket has sent \/ received the data$/;"	e	enum:sf::Socket::Status
+Error	SFML/Network/Socket.hpp	/^        Error         \/\/\/< An unexpected error happened$/;"	e	enum:sf::Socket::Status
+NotReady	SFML/Network/Socket.hpp	/^        NotReady,     \/\/\/< The socket is not ready to send \/ receive data yet$/;"	e	enum:sf::Socket::Status
+Partial	SFML/Network/Socket.hpp	/^        Partial,      \/\/\/< The socket sent a part of the data$/;"	e	enum:sf::Socket::Status
+SFML_SOCKET_HPP	SFML/Network/Socket.hpp	/^#define SFML_SOCKET_HPP$/;"	d
+Socket	SFML/Network/Socket.hpp	/^class SFML_NETWORK_API Socket : NonCopyable$/;"	c	namespace:sf
+Status	SFML/Network/Socket.hpp	/^    enum Status$/;"	g	class:sf::Socket
+Tcp	SFML/Network/Socket.hpp	/^        Tcp, \/\/\/< TCP protocol$/;"	e	enum:sf::Socket::Type
+Type	SFML/Network/Socket.hpp	/^    enum Type$/;"	g	class:sf::Socket
+Udp	SFML/Network/Socket.hpp	/^        Udp  \/\/\/< UDP protocol$/;"	e	enum:sf::Socket::Type
+m_isBlocking	SFML/Network/Socket.hpp	/^    bool         m_isBlocking; \/\/\/< Current blocking mode of the socket$/;"	m	class:sf::Socket
+m_socket	SFML/Network/Socket.hpp	/^    SocketHandle m_socket;     \/\/\/< Socket descriptor$/;"	m	class:sf::Socket
+m_type	SFML/Network/Socket.hpp	/^    Type         m_type;       \/\/\/< Type of the socket (TCP or UDP)$/;"	m	class:sf::Socket
+sf	SFML/Network/Socket.hpp	/^namespace sf$/;"	n
+SFML_SOCKETHANDLE_HPP	SFML/Network/SocketHandle.hpp	/^#define SFML_SOCKETHANDLE_HPP$/;"	d
+SocketHandle	SFML/Network/SocketHandle.hpp	/^    typedef UINT_PTR SocketHandle;$/;"	t	namespace:sf
+sf	SFML/Network/SocketHandle.hpp	/^namespace sf$/;"	n
+SFML_SOCKETSELECTOR_HPP	SFML/Network/SocketSelector.hpp	/^#define SFML_SOCKETSELECTOR_HPP$/;"	d
+SocketSelector	SFML/Network/SocketSelector.hpp	/^class SFML_NETWORK_API SocketSelector$/;"	c	namespace:sf
+m_impl	SFML/Network/SocketSelector.hpp	/^    SocketSelectorImpl* m_impl; \/\/\/< Opaque pointer to the implementation (which requires OS-specific types)$/;"	m	class:sf::SocketSelector
+sf	SFML/Network/SocketSelector.hpp	/^namespace sf$/;"	n
+SFML_TCPLISTENER_HPP	SFML/Network/TcpListener.hpp	/^#define SFML_TCPLISTENER_HPP$/;"	d
+TcpListener	SFML/Network/TcpListener.hpp	/^class SFML_NETWORK_API TcpListener : public Socket$/;"	c	namespace:sf
+sf	SFML/Network/TcpListener.hpp	/^namespace sf$/;"	n
+Data	SFML/Network/TcpSocket.hpp	/^        std::vector<char> Data;         \/\/\/< Data of the packet$/;"	m	struct:sf::TcpSocket::PendingPacket
+PendingPacket	SFML/Network/TcpSocket.hpp	/^    struct PendingPacket$/;"	s	class:sf::TcpSocket
+SFML_TCPSOCKET_HPP	SFML/Network/TcpSocket.hpp	/^#define SFML_TCPSOCKET_HPP$/;"	d
+Size	SFML/Network/TcpSocket.hpp	/^        Uint32            Size;         \/\/\/< Data of packet size$/;"	m	struct:sf::TcpSocket::PendingPacket
+SizeReceived	SFML/Network/TcpSocket.hpp	/^        std::size_t       SizeReceived; \/\/\/< Number of size bytes received so far$/;"	m	struct:sf::TcpSocket::PendingPacket
+TcpSocket	SFML/Network/TcpSocket.hpp	/^class SFML_NETWORK_API TcpSocket : public Socket$/;"	c	namespace:sf
+m_pendingPacket	SFML/Network/TcpSocket.hpp	/^    PendingPacket m_pendingPacket; \/\/\/< Temporary data of the packet currently being received$/;"	m	class:sf::TcpSocket
+sf	SFML/Network/TcpSocket.hpp	/^namespace sf$/;"	n
+MaxDatagramSize	SFML/Network/UdpSocket.hpp	/^        MaxDatagramSize = 65507 \/\/\/< The maximum number of bytes that can be sent in a single UDP datagram$/;"	e	enum:sf::UdpSocket::__anon1
+SFML_UDPSOCKET_HPP	SFML/Network/UdpSocket.hpp	/^#define SFML_UDPSOCKET_HPP$/;"	d
+UdpSocket	SFML/Network/UdpSocket.hpp	/^class SFML_NETWORK_API UdpSocket : public Socket$/;"	c	namespace:sf
+m_buffer	SFML/Network/UdpSocket.hpp	/^    std::vector<char> m_buffer; \/\/\/< Temporary buffer holding the received data in Receive(Packet)$/;"	m	class:sf::UdpSocket
+sf	SFML/Network/UdpSocket.hpp	/^namespace sf$/;"	n
+SFML_OPENGL_HPP	SFML/OpenGL.hpp	/^#define SFML_OPENGL_HPP$/;"	d
+SFML_SYSTEM_HPP	SFML/System.hpp	/^#define SFML_SYSTEM_HPP$/;"	d
+Clock	SFML/System/Clock.hpp	/^class SFML_SYSTEM_API Clock$/;"	c	namespace:sf
+SFML_CLOCK_HPP	SFML/System/Clock.hpp	/^#define SFML_CLOCK_HPP$/;"	d
+m_startTime	SFML/System/Clock.hpp	/^    Time m_startTime; \/\/\/< Time of last reset, in microseconds$/;"	m	class:sf::Clock
+sf	SFML/System/Clock.hpp	/^namespace sf$/;"	n
+SFML_ERR_HPP	SFML/System/Err.hpp	/^#define SFML_ERR_HPP$/;"	d
+sf	SFML/System/Err.hpp	/^namespace sf$/;"	n
+SFML_SYSTEM_API	SFML/System/Export.hpp	/^    #define SFML_SYSTEM_API /;"	d
+SFML_SYSTEM_EXPORT_HPP	SFML/System/Export.hpp	/^#define SFML_SYSTEM_EXPORT_HPP$/;"	d
+FileInputStream	SFML/System/FileInputStream.hpp	/^class SFML_SYSTEM_API FileInputStream : public InputStream, NonCopyable$/;"	c	namespace:sf
+ResourceStream	SFML/System/FileInputStream.hpp	/^class SFML_SYSTEM_API ResourceStream;$/;"	m	namespace:sf::priv	typeref:class:sf::priv::SFML_SYSTEM_API
+SFML_FILEINPUTSTREAM_HPP	SFML/System/FileInputStream.hpp	/^#define SFML_FILEINPUTSTREAM_HPP$/;"	d
+m_file	SFML/System/FileInputStream.hpp	/^    priv::ResourceStream* m_file;$/;"	m	class:sf::FileInputStream
+m_file	SFML/System/FileInputStream.hpp	/^    std::FILE* m_file; \/\/\/< stdio file stream$/;"	m	class:sf::FileInputStream
+priv	SFML/System/FileInputStream.hpp	/^namespace priv$/;"	n	namespace:sf
+sf	SFML/System/FileInputStream.hpp	/^namespace sf$/;"	n
+InputStream	SFML/System/InputStream.hpp	/^class SFML_SYSTEM_API InputStream$/;"	c	namespace:sf
+SFML_INPUTSTREAM_HPP	SFML/System/InputStream.hpp	/^#define SFML_INPUTSTREAM_HPP$/;"	d
+sf	SFML/System/InputStream.hpp	/^namespace sf$/;"	n
+~InputStream	SFML/System/InputStream.hpp	/^    virtual ~InputStream() {}$/;"	f	class:sf::InputStream
+Lock	SFML/System/Lock.hpp	/^class SFML_SYSTEM_API Lock : NonCopyable$/;"	c	namespace:sf
+SFML_LOCK_HPP	SFML/System/Lock.hpp	/^#define SFML_LOCK_HPP$/;"	d
+m_mutex	SFML/System/Lock.hpp	/^    Mutex& m_mutex; \/\/\/< Mutex to lock \/ unlock$/;"	m	class:sf::Lock
+sf	SFML/System/Lock.hpp	/^namespace sf$/;"	n
+MemoryInputStream	SFML/System/MemoryInputStream.hpp	/^class SFML_SYSTEM_API MemoryInputStream : public InputStream$/;"	c	namespace:sf
+SFML_MEMORYINPUTSTREAM_HPP	SFML/System/MemoryInputStream.hpp	/^#define SFML_MEMORYINPUTSTREAM_HPP$/;"	d
+m_data	SFML/System/MemoryInputStream.hpp	/^    const char* m_data;   \/\/\/< Pointer to the data in memory$/;"	m	class:sf::MemoryInputStream
+m_offset	SFML/System/MemoryInputStream.hpp	/^    Int64       m_offset; \/\/\/< Current reading position$/;"	m	class:sf::MemoryInputStream
+m_size	SFML/System/MemoryInputStream.hpp	/^    Int64       m_size;   \/\/\/< Total size of the data$/;"	m	class:sf::MemoryInputStream
+sf	SFML/System/MemoryInputStream.hpp	/^namespace sf$/;"	n
+Mutex	SFML/System/Mutex.hpp	/^class SFML_SYSTEM_API Mutex : NonCopyable$/;"	c	namespace:sf
+SFML_MUTEX_HPP	SFML/System/Mutex.hpp	/^#define SFML_MUTEX_HPP$/;"	d
+m_mutexImpl	SFML/System/Mutex.hpp	/^    priv::MutexImpl* m_mutexImpl; \/\/\/< OS-specific implementation$/;"	m	class:sf::Mutex
+priv	SFML/System/Mutex.hpp	/^namespace priv$/;"	n	namespace:sf
+sf	SFML/System/Mutex.hpp	/^namespace sf$/;"	n
+SFML_NATIVEACTIVITY_HPP	SFML/System/NativeActivity.hpp	/^#define SFML_NATIVEACTIVITY_HPP$/;"	d
+sf	SFML/System/NativeActivity.hpp	/^namespace sf$/;"	n
+NonCopyable	SFML/System/NonCopyable.hpp	/^    NonCopyable() {}$/;"	f	class:sf::NonCopyable
+NonCopyable	SFML/System/NonCopyable.hpp	/^class SFML_SYSTEM_API NonCopyable$/;"	c	namespace:sf
+SFML_NONCOPYABLE_HPP	SFML/System/NonCopyable.hpp	/^#define SFML_NONCOPYABLE_HPP$/;"	d
+sf	SFML/System/NonCopyable.hpp	/^namespace sf$/;"	n
+SFML_SLEEP_HPP	SFML/System/Sleep.hpp	/^#define SFML_SLEEP_HPP$/;"	d
+sf	SFML/System/Sleep.hpp	/^namespace sf$/;"	n
+ConstIterator	SFML/System/String.hpp	/^    typedef std::basic_string<Uint32>::const_iterator ConstIterator; \/\/\/< Read-only iterator type$/;"	t	class:sf::String
+InvalidPos	SFML/System/String.hpp	/^    static const std::size_t InvalidPos; \/\/\/< Represents an invalid position in the string$/;"	m	class:sf::String
+Iterator	SFML/System/String.hpp	/^    typedef std::basic_string<Uint32>::iterator       Iterator;      \/\/\/< Iterator type$/;"	t	class:sf::String
+SFML_STRING_HPP	SFML/System/String.hpp	/^#define SFML_STRING_HPP$/;"	d
+String	SFML/System/String.hpp	/^class SFML_SYSTEM_API String$/;"	c	namespace:sf
+m_string	SFML/System/String.hpp	/^    std::basic_string<Uint32> m_string; \/\/\/< Internal string of UTF-32 characters$/;"	m	class:sf::String
+sf	SFML/System/String.hpp	/^namespace sf$/;"	n
+SFML_THREAD_HPP	SFML/System/Thread.hpp	/^#define SFML_THREAD_HPP$/;"	d
+Thread	SFML/System/Thread.hpp	/^class SFML_SYSTEM_API Thread : NonCopyable$/;"	c	namespace:sf
+m_entryPoint	SFML/System/Thread.hpp	/^    priv::ThreadFunc* m_entryPoint; \/\/\/< Abstraction of the function to run$/;"	m	class:sf::Thread
+m_impl	SFML/System/Thread.hpp	/^    priv::ThreadImpl* m_impl;       \/\/\/< OS-specific implementation of the thread$/;"	m	class:sf::Thread
+priv	SFML/System/Thread.hpp	/^namespace priv$/;"	n	namespace:sf
+sf	SFML/System/Thread.hpp	/^namespace sf$/;"	n
+SFML_THREADLOCAL_HPP	SFML/System/ThreadLocal.hpp	/^#define SFML_THREADLOCAL_HPP$/;"	d
+ThreadLocal	SFML/System/ThreadLocal.hpp	/^class SFML_SYSTEM_API ThreadLocal : NonCopyable$/;"	c	namespace:sf
+m_impl	SFML/System/ThreadLocal.hpp	/^    priv::ThreadLocalImpl* m_impl; \/\/\/< Pointer to the OS specific implementation$/;"	m	class:sf::ThreadLocal
+priv	SFML/System/ThreadLocal.hpp	/^namespace priv$/;"	n	namespace:sf
+sf	SFML/System/ThreadLocal.hpp	/^namespace sf$/;"	n
+SFML_THREADLOCALPTR_HPP	SFML/System/ThreadLocalPtr.hpp	/^#define SFML_THREADLOCALPTR_HPP$/;"	d
+ThreadLocalPtr	SFML/System/ThreadLocalPtr.hpp	/^class ThreadLocalPtr : private ThreadLocal$/;"	c	namespace:sf
+sf	SFML/System/ThreadLocalPtr.hpp	/^namespace sf$/;"	n
+SFML_TIME_HPP	SFML/System/Time.hpp	/^#define SFML_TIME_HPP$/;"	d
+Time	SFML/System/Time.hpp	/^class SFML_SYSTEM_API Time$/;"	c	namespace:sf
+Zero	SFML/System/Time.hpp	/^    static const Time Zero; \/\/\/< Predefined "zero" time value$/;"	m	class:sf::Time
+m_microseconds	SFML/System/Time.hpp	/^    Int64 m_microseconds; \/\/\/< Time value stored as microseconds$/;"	m	class:sf::Time
+sf	SFML/System/Time.hpp	/^namespace sf$/;"	n
+SFML_UTF_HPP	SFML/System/Utf.hpp	/^#define SFML_UTF_HPP$/;"	d
+Utf	SFML/System/Utf.hpp	/^class Utf<16>$/;"	c	namespace:sf
+Utf	SFML/System/Utf.hpp	/^class Utf<32>$/;"	c	namespace:sf
+Utf	SFML/System/Utf.hpp	/^class Utf<8>$/;"	c	namespace:sf
+Utf16	SFML/System/Utf.hpp	/^typedef Utf<16> Utf16;$/;"	t	namespace:sf
+Utf32	SFML/System/Utf.hpp	/^typedef Utf<32> Utf32;$/;"	t	namespace:sf
+Utf8	SFML/System/Utf.hpp	/^typedef Utf<8>  Utf8;$/;"	t	namespace:sf
+sf	SFML/System/Utf.hpp	/^namespace sf$/;"	n
+SFML_VECTOR2_HPP	SFML/System/Vector2.hpp	/^#define SFML_VECTOR2_HPP$/;"	d
+Vector2	SFML/System/Vector2.hpp	/^class Vector2$/;"	c	namespace:sf
+Vector2f	SFML/System/Vector2.hpp	/^typedef Vector2<float>        Vector2f;$/;"	t	namespace:sf
+Vector2i	SFML/System/Vector2.hpp	/^typedef Vector2<int>          Vector2i;$/;"	t	namespace:sf
+Vector2u	SFML/System/Vector2.hpp	/^typedef Vector2<unsigned int> Vector2u;$/;"	t	namespace:sf
+sf	SFML/System/Vector2.hpp	/^namespace sf$/;"	n
+x	SFML/System/Vector2.hpp	/^    T x; \/\/\/< X coordinate of the vector$/;"	m	class:sf::Vector2
+y	SFML/System/Vector2.hpp	/^    T y; \/\/\/< Y coordinate of the vector$/;"	m	class:sf::Vector2
+SFML_VECTOR3_HPP	SFML/System/Vector3.hpp	/^#define SFML_VECTOR3_HPP$/;"	d
+Vector3	SFML/System/Vector3.hpp	/^class Vector3$/;"	c	namespace:sf
+Vector3f	SFML/System/Vector3.hpp	/^typedef Vector3<float> Vector3f;$/;"	t	namespace:sf
+Vector3i	SFML/System/Vector3.hpp	/^typedef Vector3<int>   Vector3i;$/;"	t	namespace:sf
+sf	SFML/System/Vector3.hpp	/^namespace sf$/;"	n
+x	SFML/System/Vector3.hpp	/^    T x; \/\/\/< X coordinate of the vector$/;"	m	class:sf::Vector3
+y	SFML/System/Vector3.hpp	/^    T y; \/\/\/< Y coordinate of the vector$/;"	m	class:sf::Vector3
+z	SFML/System/Vector3.hpp	/^    T z; \/\/\/< Z coordinate of the vector$/;"	m	class:sf::Vector3
+SFML_SFML_WINDOW_HPP	SFML/Window.hpp	/^#define SFML_SFML_WINDOW_HPP$/;"	d
+Context	SFML/Window/Context.hpp	/^class SFML_WINDOW_API Context : GlResource, NonCopyable$/;"	c	namespace:sf
+GlFunctionPointer	SFML/Window/Context.hpp	/^typedef void (*GlFunctionPointer)();$/;"	t	namespace:sf
+SFML_CONTEXT_HPP	SFML/Window/Context.hpp	/^#define SFML_CONTEXT_HPP$/;"	d
+m_context	SFML/Window/Context.hpp	/^    priv::GlContext* m_context; \/\/\/< Internal OpenGL context$/;"	m	class:sf::Context
+priv	SFML/Window/Context.hpp	/^namespace priv$/;"	n	namespace:sf
+sf	SFML/Window/Context.hpp	/^namespace sf$/;"	n
+Attribute	SFML/Window/ContextSettings.hpp	/^    enum Attribute$/;"	g	struct:sf::ContextSettings
+ContextSettings	SFML/Window/ContextSettings.hpp	/^    explicit ContextSettings(unsigned int depth = 0, unsigned int stencil = 0, unsigned int antialiasing = 0, unsigned int major = 1, unsigned int minor = 1, unsigned int attributes = Default, bool sRgb = false) :$/;"	f	struct:sf::ContextSettings
+ContextSettings	SFML/Window/ContextSettings.hpp	/^struct ContextSettings$/;"	s	namespace:sf
+Core	SFML/Window/ContextSettings.hpp	/^        Core    = 1 << 0, \/\/\/< Core attribute$/;"	e	enum:sf::ContextSettings::Attribute
+Debug	SFML/Window/ContextSettings.hpp	/^        Debug   = 1 << 2  \/\/\/< Debug attribute$/;"	e	enum:sf::ContextSettings::Attribute
+Default	SFML/Window/ContextSettings.hpp	/^        Default = 0,      \/\/\/< Non-debug, compatibility context (this and the core attribute are mutually exclusive)$/;"	e	enum:sf::ContextSettings::Attribute
+SFML_CONTEXTSETTINGS_HPP	SFML/Window/ContextSettings.hpp	/^#define SFML_CONTEXTSETTINGS_HPP$/;"	d
+antialiasingLevel	SFML/Window/ContextSettings.hpp	/^    unsigned int antialiasingLevel; \/\/\/< Level of antialiasing$/;"	m	struct:sf::ContextSettings
+attributeFlags	SFML/Window/ContextSettings.hpp	/^    Uint32       attributeFlags;    \/\/\/< The attribute flags to create the context with$/;"	m	struct:sf::ContextSettings
+depthBits	SFML/Window/ContextSettings.hpp	/^    unsigned int depthBits;         \/\/\/< Bits of the depth buffer$/;"	m	struct:sf::ContextSettings
+majorVersion	SFML/Window/ContextSettings.hpp	/^    unsigned int majorVersion;      \/\/\/< Major number of the context version to create$/;"	m	struct:sf::ContextSettings
+minorVersion	SFML/Window/ContextSettings.hpp	/^    unsigned int minorVersion;      \/\/\/< Minor number of the context version to create$/;"	m	struct:sf::ContextSettings
+sRgbCapable	SFML/Window/ContextSettings.hpp	/^    bool         sRgbCapable;       \/\/\/< Whether the context framebuffer is sRGB capable$/;"	m	struct:sf::ContextSettings
+sf	SFML/Window/ContextSettings.hpp	/^namespace sf$/;"	n
+stencilBits	SFML/Window/ContextSettings.hpp	/^    unsigned int stencilBits;       \/\/\/< Bits of the stencil buffer$/;"	m	struct:sf::ContextSettings
+Closed	SFML/Window/Event.hpp	/^        Closed,                 \/\/\/< The window requested to be closed (no data)$/;"	e	enum:sf::Event::EventType
+Count	SFML/Window/Event.hpp	/^        Count                   \/\/\/< Keep last -- the total number of event types$/;"	e	enum:sf::Event::EventType
+Event	SFML/Window/Event.hpp	/^class Event$/;"	c	namespace:sf
+EventType	SFML/Window/Event.hpp	/^    enum EventType$/;"	g	class:sf::Event
+GainedFocus	SFML/Window/Event.hpp	/^        GainedFocus,            \/\/\/< The window gained the focus (no data)$/;"	e	enum:sf::Event::EventType
+JoystickButtonEvent	SFML/Window/Event.hpp	/^    struct JoystickButtonEvent$/;"	s	class:sf::Event
+JoystickButtonPressed	SFML/Window/Event.hpp	/^        JoystickButtonPressed,  \/\/\/< A joystick button was pressed (data in event.joystickButton)$/;"	e	enum:sf::Event::EventType
+JoystickButtonReleased	SFML/Window/Event.hpp	/^        JoystickButtonReleased, \/\/\/< A joystick button was released (data in event.joystickButton)$/;"	e	enum:sf::Event::EventType
+JoystickConnectEvent	SFML/Window/Event.hpp	/^    struct JoystickConnectEvent$/;"	s	class:sf::Event
+JoystickConnected	SFML/Window/Event.hpp	/^        JoystickConnected,      \/\/\/< A joystick was connected (data in event.joystickConnect)$/;"	e	enum:sf::Event::EventType
+JoystickDisconnected	SFML/Window/Event.hpp	/^        JoystickDisconnected,   \/\/\/< A joystick was disconnected (data in event.joystickConnect)$/;"	e	enum:sf::Event::EventType
+JoystickMoveEvent	SFML/Window/Event.hpp	/^    struct JoystickMoveEvent$/;"	s	class:sf::Event
+JoystickMoved	SFML/Window/Event.hpp	/^        JoystickMoved,          \/\/\/< The joystick moved along an axis (data in event.joystickMove)$/;"	e	enum:sf::Event::EventType
+KeyEvent	SFML/Window/Event.hpp	/^    struct KeyEvent$/;"	s	class:sf::Event
+KeyPressed	SFML/Window/Event.hpp	/^        KeyPressed,             \/\/\/< A key was pressed (data in event.key)$/;"	e	enum:sf::Event::EventType
+KeyReleased	SFML/Window/Event.hpp	/^        KeyReleased,            \/\/\/< A key was released (data in event.key)$/;"	e	enum:sf::Event::EventType
+LostFocus	SFML/Window/Event.hpp	/^        LostFocus,              \/\/\/< The window lost the focus (no data)$/;"	e	enum:sf::Event::EventType
+MouseButtonEvent	SFML/Window/Event.hpp	/^    struct MouseButtonEvent$/;"	s	class:sf::Event
+MouseButtonPressed	SFML/Window/Event.hpp	/^        MouseButtonPressed,     \/\/\/< A mouse button was pressed (data in event.mouseButton)$/;"	e	enum:sf::Event::EventType
+MouseButtonReleased	SFML/Window/Event.hpp	/^        MouseButtonReleased,    \/\/\/< A mouse button was released (data in event.mouseButton)$/;"	e	enum:sf::Event::EventType
+MouseEntered	SFML/Window/Event.hpp	/^        MouseEntered,           \/\/\/< The mouse cursor entered the area of the window (no data)$/;"	e	enum:sf::Event::EventType
+MouseLeft	SFML/Window/Event.hpp	/^        MouseLeft,              \/\/\/< The mouse cursor left the area of the window (no data)$/;"	e	enum:sf::Event::EventType
+MouseMoveEvent	SFML/Window/Event.hpp	/^    struct MouseMoveEvent$/;"	s	class:sf::Event
+MouseMoved	SFML/Window/Event.hpp	/^        MouseMoved,             \/\/\/< The mouse cursor moved (data in event.mouseMove)$/;"	e	enum:sf::Event::EventType
+MouseWheelEvent	SFML/Window/Event.hpp	/^    struct MouseWheelEvent$/;"	s	class:sf::Event
+MouseWheelMoved	SFML/Window/Event.hpp	/^        MouseWheelMoved,        \/\/\/< The mouse wheel was scrolled (data in event.mouseWheel) (deprecated)$/;"	e	enum:sf::Event::EventType
+MouseWheelScrollEvent	SFML/Window/Event.hpp	/^    struct MouseWheelScrollEvent$/;"	s	class:sf::Event
+MouseWheelScrolled	SFML/Window/Event.hpp	/^        MouseWheelScrolled,     \/\/\/< The mouse wheel was scrolled (data in event.mouseWheelScroll)$/;"	e	enum:sf::Event::EventType
+Resized	SFML/Window/Event.hpp	/^        Resized,                \/\/\/< The window was resized (data in event.size)$/;"	e	enum:sf::Event::EventType
+SFML_EVENT_HPP	SFML/Window/Event.hpp	/^#define SFML_EVENT_HPP$/;"	d
+SensorChanged	SFML/Window/Event.hpp	/^        SensorChanged,          \/\/\/< A sensor value changed (data in event.sensor)$/;"	e	enum:sf::Event::EventType
+SensorEvent	SFML/Window/Event.hpp	/^    struct SensorEvent$/;"	s	class:sf::Event
+SizeEvent	SFML/Window/Event.hpp	/^    struct SizeEvent$/;"	s	class:sf::Event
+TextEntered	SFML/Window/Event.hpp	/^        TextEntered,            \/\/\/< A character was entered (data in event.text)$/;"	e	enum:sf::Event::EventType
+TextEvent	SFML/Window/Event.hpp	/^    struct TextEvent$/;"	s	class:sf::Event
+TouchBegan	SFML/Window/Event.hpp	/^        TouchBegan,             \/\/\/< A touch event began (data in event.touch)$/;"	e	enum:sf::Event::EventType
+TouchEnded	SFML/Window/Event.hpp	/^        TouchEnded,             \/\/\/< A touch event ended (data in event.touch)$/;"	e	enum:sf::Event::EventType
+TouchEvent	SFML/Window/Event.hpp	/^    struct TouchEvent$/;"	s	class:sf::Event
+TouchMoved	SFML/Window/Event.hpp	/^        TouchMoved,             \/\/\/< A touch moved (data in event.touch)$/;"	e	enum:sf::Event::EventType
+alt	SFML/Window/Event.hpp	/^        bool          alt;     \/\/\/< Is the Alt key pressed?$/;"	m	struct:sf::Event::KeyEvent
+axis	SFML/Window/Event.hpp	/^        Joystick::Axis axis;       \/\/\/< Axis on which the joystick moved$/;"	m	struct:sf::Event::JoystickMoveEvent
+button	SFML/Window/Event.hpp	/^        Mouse::Button button; \/\/\/< Code of the button that has been pressed$/;"	m	struct:sf::Event::MouseButtonEvent
+button	SFML/Window/Event.hpp	/^        unsigned int button;     \/\/\/< Index of the button that has been pressed (in range [0 .. Joystick::ButtonCount - 1])$/;"	m	struct:sf::Event::JoystickButtonEvent
+code	SFML/Window/Event.hpp	/^        Keyboard::Key code;    \/\/\/< Code of the key that has been pressed$/;"	m	struct:sf::Event::KeyEvent
+control	SFML/Window/Event.hpp	/^        bool          control; \/\/\/< Is the Control key pressed?$/;"	m	struct:sf::Event::KeyEvent
+delta	SFML/Window/Event.hpp	/^        float        delta; \/\/\/< Wheel offset (positive is up\/left, negative is down\/right). High-precision mice may use non-integral offsets.$/;"	m	struct:sf::Event::MouseWheelScrollEvent
+delta	SFML/Window/Event.hpp	/^        int delta; \/\/\/< Number of ticks the wheel has moved (positive is up, negative is down)$/;"	m	struct:sf::Event::MouseWheelEvent
+finger	SFML/Window/Event.hpp	/^        unsigned int finger; \/\/\/< Index of the finger in case of multi-touch events$/;"	m	struct:sf::Event::TouchEvent
+height	SFML/Window/Event.hpp	/^        unsigned int height; \/\/\/< New height, in pixels$/;"	m	struct:sf::Event::SizeEvent
+joystickButton	SFML/Window/Event.hpp	/^        JoystickButtonEvent   joystickButton;    \/\/\/< Joystick button event parameters (Event::JoystickButtonPressed, Event::JoystickButtonReleased)$/;"	m	union:sf::Event::__anon4
+joystickConnect	SFML/Window/Event.hpp	/^        JoystickConnectEvent  joystickConnect;   \/\/\/< Joystick (dis)connect event parameters (Event::JoystickConnected, Event::JoystickDisconnected)$/;"	m	union:sf::Event::__anon4
+joystickId	SFML/Window/Event.hpp	/^        unsigned int   joystickId; \/\/\/< Index of the joystick (in range [0 .. Joystick::Count - 1])$/;"	m	struct:sf::Event::JoystickMoveEvent
+joystickId	SFML/Window/Event.hpp	/^        unsigned int joystickId; \/\/\/< Index of the joystick (in range [0 .. Joystick::Count - 1])$/;"	m	struct:sf::Event::JoystickButtonEvent
+joystickId	SFML/Window/Event.hpp	/^        unsigned int joystickId; \/\/\/< Index of the joystick (in range [0 .. Joystick::Count - 1])$/;"	m	struct:sf::Event::JoystickConnectEvent
+joystickMove	SFML/Window/Event.hpp	/^        JoystickMoveEvent     joystickMove;      \/\/\/< Joystick move event parameters (Event::JoystickMoved)$/;"	m	union:sf::Event::__anon4
+key	SFML/Window/Event.hpp	/^        KeyEvent              key;               \/\/\/< Key event parameters (Event::KeyPressed, Event::KeyReleased)$/;"	m	union:sf::Event::__anon4
+mouseButton	SFML/Window/Event.hpp	/^        MouseButtonEvent      mouseButton;       \/\/\/< Mouse button event parameters (Event::MouseButtonPressed, Event::MouseButtonReleased)$/;"	m	union:sf::Event::__anon4
+mouseMove	SFML/Window/Event.hpp	/^        MouseMoveEvent        mouseMove;         \/\/\/< Mouse move event parameters (Event::MouseMoved)$/;"	m	union:sf::Event::__anon4
+mouseWheel	SFML/Window/Event.hpp	/^        MouseWheelEvent       mouseWheel;        \/\/\/< Mouse wheel event parameters (Event::MouseWheelMoved) (deprecated)$/;"	m	union:sf::Event::__anon4
+mouseWheelScroll	SFML/Window/Event.hpp	/^        MouseWheelScrollEvent mouseWheelScroll;  \/\/\/< Mouse wheel event parameters (Event::MouseWheelScrolled)$/;"	m	union:sf::Event::__anon4
+position	SFML/Window/Event.hpp	/^        float          position;   \/\/\/< New position on the axis (in range [-100 .. 100])$/;"	m	struct:sf::Event::JoystickMoveEvent
+sensor	SFML/Window/Event.hpp	/^        SensorEvent           sensor;            \/\/\/< Sensor event parameters (Event::SensorChanged)$/;"	m	union:sf::Event::__anon4
+sf	SFML/Window/Event.hpp	/^namespace sf$/;"	n
+shift	SFML/Window/Event.hpp	/^        bool          shift;   \/\/\/< Is the Shift key pressed?$/;"	m	struct:sf::Event::KeyEvent
+size	SFML/Window/Event.hpp	/^        SizeEvent             size;              \/\/\/< Size event parameters (Event::Resized)$/;"	m	union:sf::Event::__anon4
+system	SFML/Window/Event.hpp	/^        bool          system;  \/\/\/< Is the System key pressed?$/;"	m	struct:sf::Event::KeyEvent
+text	SFML/Window/Event.hpp	/^        TextEvent             text;              \/\/\/< Text event parameters (Event::TextEntered)$/;"	m	union:sf::Event::__anon4
+touch	SFML/Window/Event.hpp	/^        TouchEvent            touch;             \/\/\/< Touch events parameters (Event::TouchBegan, Event::TouchMoved, Event::TouchEnded)$/;"	m	union:sf::Event::__anon4
+type	SFML/Window/Event.hpp	/^        Sensor::Type type; \/\/\/< Type of the sensor$/;"	m	struct:sf::Event::SensorEvent
+type	SFML/Window/Event.hpp	/^    EventType type; \/\/\/< Type of the event$/;"	m	class:sf::Event
+unicode	SFML/Window/Event.hpp	/^        Uint32 unicode; \/\/\/< UTF-32 Unicode value of the character$/;"	m	struct:sf::Event::TextEvent
+wheel	SFML/Window/Event.hpp	/^        Mouse::Wheel wheel; \/\/\/< Which wheel (for mice with multiple ones)$/;"	m	struct:sf::Event::MouseWheelScrollEvent
+width	SFML/Window/Event.hpp	/^        unsigned int width;  \/\/\/< New width, in pixels$/;"	m	struct:sf::Event::SizeEvent
+x	SFML/Window/Event.hpp	/^        float x;           \/\/\/< Current value of the sensor on X axis$/;"	m	struct:sf::Event::SensorEvent
+x	SFML/Window/Event.hpp	/^        int           x;      \/\/\/< X position of the mouse pointer, relative to the left of the owner window$/;"	m	struct:sf::Event::MouseButtonEvent
+x	SFML/Window/Event.hpp	/^        int          x;     \/\/\/< X position of the mouse pointer, relative to the left of the owner window$/;"	m	struct:sf::Event::MouseWheelScrollEvent
+x	SFML/Window/Event.hpp	/^        int x;               \/\/\/< X position of the touch, relative to the left of the owner window$/;"	m	struct:sf::Event::TouchEvent
+x	SFML/Window/Event.hpp	/^        int x;     \/\/\/< X position of the mouse pointer, relative to the left of the owner window$/;"	m	struct:sf::Event::MouseWheelEvent
+x	SFML/Window/Event.hpp	/^        int x; \/\/\/< X position of the mouse pointer, relative to the left of the owner window$/;"	m	struct:sf::Event::MouseMoveEvent
+y	SFML/Window/Event.hpp	/^        float y;           \/\/\/< Current value of the sensor on Y axis$/;"	m	struct:sf::Event::SensorEvent
+y	SFML/Window/Event.hpp	/^        int           y;      \/\/\/< Y position of the mouse pointer, relative to the top of the owner window$/;"	m	struct:sf::Event::MouseButtonEvent
+y	SFML/Window/Event.hpp	/^        int          y;     \/\/\/< Y position of the mouse pointer, relative to the top of the owner window$/;"	m	struct:sf::Event::MouseWheelScrollEvent
+y	SFML/Window/Event.hpp	/^        int y;               \/\/\/< Y position of the touch, relative to the top of the owner window$/;"	m	struct:sf::Event::TouchEvent
+y	SFML/Window/Event.hpp	/^        int y;     \/\/\/< Y position of the mouse pointer, relative to the top of the owner window$/;"	m	struct:sf::Event::MouseWheelEvent
+y	SFML/Window/Event.hpp	/^        int y; \/\/\/< Y position of the mouse pointer, relative to the top of the owner window$/;"	m	struct:sf::Event::MouseMoveEvent
+z	SFML/Window/Event.hpp	/^        float z;           \/\/\/< Current value of the sensor on Z axis$/;"	m	struct:sf::Event::SensorEvent
+SFML_WINDOW_API	SFML/Window/Export.hpp	/^    #define SFML_WINDOW_API /;"	d
+SFML_WINDOW_EXPORT_HPP	SFML/Window/Export.hpp	/^#define SFML_WINDOW_EXPORT_HPP$/;"	d
+GlResource	SFML/Window/GlResource.hpp	/^class SFML_WINDOW_API GlResource$/;"	c	namespace:sf
+SFML_GLRESOURCE_HPP	SFML/Window/GlResource.hpp	/^#define SFML_GLRESOURCE_HPP$/;"	d
+TransientContextLock	SFML/Window/GlResource.hpp	/^    class SFML_WINDOW_API TransientContextLock : NonCopyable$/;"	c	class:sf::GlResource
+m_context	SFML/Window/GlResource.hpp	/^        Context* m_context; \/\/\/< Temporary context, in case we needed to create one$/;"	m	class:sf::GlResource::TransientContextLock
+sf	SFML/Window/GlResource.hpp	/^namespace sf$/;"	n
+Axis	SFML/Window/Joystick.hpp	/^    enum Axis$/;"	g	class:sf::Joystick
+AxisCount	SFML/Window/Joystick.hpp	/^        AxisCount   = 8   \/\/\/< Maximum number of supported axes$/;"	e	enum:sf::Joystick::__anon5
+ButtonCount	SFML/Window/Joystick.hpp	/^        ButtonCount = 32, \/\/\/< Maximum number of supported buttons$/;"	e	enum:sf::Joystick::__anon5
+Count	SFML/Window/Joystick.hpp	/^        Count       = 8,  \/\/\/< Maximum number of supported joysticks$/;"	e	enum:sf::Joystick::__anon5
+Identification	SFML/Window/Joystick.hpp	/^    struct SFML_WINDOW_API Identification$/;"	s	class:sf::Joystick
+Joystick	SFML/Window/Joystick.hpp	/^class SFML_WINDOW_API Joystick$/;"	c	namespace:sf
+PovX	SFML/Window/Joystick.hpp	/^        PovX, \/\/\/< The X axis of the point-of-view hat$/;"	e	enum:sf::Joystick::Axis
+PovY	SFML/Window/Joystick.hpp	/^        PovY  \/\/\/< The Y axis of the point-of-view hat$/;"	e	enum:sf::Joystick::Axis
+R	SFML/Window/Joystick.hpp	/^        R,    \/\/\/< The R axis$/;"	e	enum:sf::Joystick::Axis
+SFML_JOYSTICK_HPP	SFML/Window/Joystick.hpp	/^#define SFML_JOYSTICK_HPP$/;"	d
+U	SFML/Window/Joystick.hpp	/^        U,    \/\/\/< The U axis$/;"	e	enum:sf::Joystick::Axis
+V	SFML/Window/Joystick.hpp	/^        V,    \/\/\/< The V axis$/;"	e	enum:sf::Joystick::Axis
+X	SFML/Window/Joystick.hpp	/^        X,    \/\/\/< The X axis$/;"	e	enum:sf::Joystick::Axis
+Y	SFML/Window/Joystick.hpp	/^        Y,    \/\/\/< The Y axis$/;"	e	enum:sf::Joystick::Axis
+Z	SFML/Window/Joystick.hpp	/^        Z,    \/\/\/< The Z axis$/;"	e	enum:sf::Joystick::Axis
+name	SFML/Window/Joystick.hpp	/^        String       name;      \/\/\/< Name of the joystick$/;"	m	struct:sf::Joystick::Identification
+productId	SFML/Window/Joystick.hpp	/^        unsigned int productId; \/\/\/< Product identifier$/;"	m	struct:sf::Joystick::Identification
+sf	SFML/Window/Joystick.hpp	/^namespace sf$/;"	n
+vendorId	SFML/Window/Joystick.hpp	/^        unsigned int vendorId;  \/\/\/< Manufacturer identifier$/;"	m	struct:sf::Joystick::Identification
+A	SFML/Window/Keyboard.hpp	/^        A = 0,        \/\/\/< The A key$/;"	e	enum:sf::Keyboard::Key
+Add	SFML/Window/Keyboard.hpp	/^        Add,          \/\/\/< The + key$/;"	e	enum:sf::Keyboard::Key
+B	SFML/Window/Keyboard.hpp	/^        B,            \/\/\/< The B key$/;"	e	enum:sf::Keyboard::Key
+BackSlash	SFML/Window/Keyboard.hpp	/^        BackSlash,    \/\/\/< The \\ key$/;"	e	enum:sf::Keyboard::Key
+BackSpace	SFML/Window/Keyboard.hpp	/^        BackSpace,    \/\/\/< The Backspace key$/;"	e	enum:sf::Keyboard::Key
+C	SFML/Window/Keyboard.hpp	/^        C,            \/\/\/< The C key$/;"	e	enum:sf::Keyboard::Key
+Comma	SFML/Window/Keyboard.hpp	/^        Comma,        \/\/\/< The , key$/;"	e	enum:sf::Keyboard::Key
+D	SFML/Window/Keyboard.hpp	/^        D,            \/\/\/< The D key$/;"	e	enum:sf::Keyboard::Key
+Dash	SFML/Window/Keyboard.hpp	/^        Dash,         \/\/\/< The - key$/;"	e	enum:sf::Keyboard::Key
+Delete	SFML/Window/Keyboard.hpp	/^        Delete,       \/\/\/< The Delete key$/;"	e	enum:sf::Keyboard::Key
+Divide	SFML/Window/Keyboard.hpp	/^        Divide,       \/\/\/< The \/ key$/;"	e	enum:sf::Keyboard::Key
+Down	SFML/Window/Keyboard.hpp	/^        Down,         \/\/\/< Down arrow$/;"	e	enum:sf::Keyboard::Key
+E	SFML/Window/Keyboard.hpp	/^        E,            \/\/\/< The E key$/;"	e	enum:sf::Keyboard::Key
+End	SFML/Window/Keyboard.hpp	/^        End,          \/\/\/< The End key$/;"	e	enum:sf::Keyboard::Key
+Equal	SFML/Window/Keyboard.hpp	/^        Equal,        \/\/\/< The = key$/;"	e	enum:sf::Keyboard::Key
+Escape	SFML/Window/Keyboard.hpp	/^        Escape,       \/\/\/< The Escape key$/;"	e	enum:sf::Keyboard::Key
+F	SFML/Window/Keyboard.hpp	/^        F,            \/\/\/< The F key$/;"	e	enum:sf::Keyboard::Key
+F1	SFML/Window/Keyboard.hpp	/^        F1,           \/\/\/< The F1 key$/;"	e	enum:sf::Keyboard::Key
+F10	SFML/Window/Keyboard.hpp	/^        F10,          \/\/\/< The F10 key$/;"	e	enum:sf::Keyboard::Key
+F11	SFML/Window/Keyboard.hpp	/^        F11,          \/\/\/< The F11 key$/;"	e	enum:sf::Keyboard::Key
+F12	SFML/Window/Keyboard.hpp	/^        F12,          \/\/\/< The F12 key$/;"	e	enum:sf::Keyboard::Key
+F13	SFML/Window/Keyboard.hpp	/^        F13,          \/\/\/< The F13 key$/;"	e	enum:sf::Keyboard::Key
+F14	SFML/Window/Keyboard.hpp	/^        F14,          \/\/\/< The F14 key$/;"	e	enum:sf::Keyboard::Key
+F15	SFML/Window/Keyboard.hpp	/^        F15,          \/\/\/< The F15 key$/;"	e	enum:sf::Keyboard::Key
+F2	SFML/Window/Keyboard.hpp	/^        F2,           \/\/\/< The F2 key$/;"	e	enum:sf::Keyboard::Key
+F3	SFML/Window/Keyboard.hpp	/^        F3,           \/\/\/< The F3 key$/;"	e	enum:sf::Keyboard::Key
+F4	SFML/Window/Keyboard.hpp	/^        F4,           \/\/\/< The F4 key$/;"	e	enum:sf::Keyboard::Key
+F5	SFML/Window/Keyboard.hpp	/^        F5,           \/\/\/< The F5 key$/;"	e	enum:sf::Keyboard::Key
+F6	SFML/Window/Keyboard.hpp	/^        F6,           \/\/\/< The F6 key$/;"	e	enum:sf::Keyboard::Key
+F7	SFML/Window/Keyboard.hpp	/^        F7,           \/\/\/< The F7 key$/;"	e	enum:sf::Keyboard::Key
+F8	SFML/Window/Keyboard.hpp	/^        F8,           \/\/\/< The F8 key$/;"	e	enum:sf::Keyboard::Key
+F9	SFML/Window/Keyboard.hpp	/^        F9,           \/\/\/< The F9 key$/;"	e	enum:sf::Keyboard::Key
+G	SFML/Window/Keyboard.hpp	/^        G,            \/\/\/< The G key$/;"	e	enum:sf::Keyboard::Key
+H	SFML/Window/Keyboard.hpp	/^        H,            \/\/\/< The H key$/;"	e	enum:sf::Keyboard::Key
+Home	SFML/Window/Keyboard.hpp	/^        Home,         \/\/\/< The Home key$/;"	e	enum:sf::Keyboard::Key
+I	SFML/Window/Keyboard.hpp	/^        I,            \/\/\/< The I key$/;"	e	enum:sf::Keyboard::Key
+Insert	SFML/Window/Keyboard.hpp	/^        Insert,       \/\/\/< The Insert key$/;"	e	enum:sf::Keyboard::Key
+J	SFML/Window/Keyboard.hpp	/^        J,            \/\/\/< The J key$/;"	e	enum:sf::Keyboard::Key
+K	SFML/Window/Keyboard.hpp	/^        K,            \/\/\/< The K key$/;"	e	enum:sf::Keyboard::Key
+Key	SFML/Window/Keyboard.hpp	/^    enum Key$/;"	g	class:sf::Keyboard
+KeyCount	SFML/Window/Keyboard.hpp	/^        KeyCount      \/\/\/< Keep last -- the total number of keyboard keys$/;"	e	enum:sf::Keyboard::Key
+Keyboard	SFML/Window/Keyboard.hpp	/^class SFML_WINDOW_API Keyboard$/;"	c	namespace:sf
+L	SFML/Window/Keyboard.hpp	/^        L,            \/\/\/< The L key$/;"	e	enum:sf::Keyboard::Key
+LAlt	SFML/Window/Keyboard.hpp	/^        LAlt,         \/\/\/< The left Alt key$/;"	e	enum:sf::Keyboard::Key
+LBracket	SFML/Window/Keyboard.hpp	/^        LBracket,     \/\/\/< The [ key$/;"	e	enum:sf::Keyboard::Key
+LControl	SFML/Window/Keyboard.hpp	/^        LControl,     \/\/\/< The left Control key$/;"	e	enum:sf::Keyboard::Key
+LShift	SFML/Window/Keyboard.hpp	/^        LShift,       \/\/\/< The left Shift key$/;"	e	enum:sf::Keyboard::Key
+LSystem	SFML/Window/Keyboard.hpp	/^        LSystem,      \/\/\/< The left OS specific key: window (Windows and Linux), apple (MacOS X), ...$/;"	e	enum:sf::Keyboard::Key
+Left	SFML/Window/Keyboard.hpp	/^        Left,         \/\/\/< Left arrow$/;"	e	enum:sf::Keyboard::Key
+M	SFML/Window/Keyboard.hpp	/^        M,            \/\/\/< The M key$/;"	e	enum:sf::Keyboard::Key
+Menu	SFML/Window/Keyboard.hpp	/^        Menu,         \/\/\/< The Menu key$/;"	e	enum:sf::Keyboard::Key
+Multiply	SFML/Window/Keyboard.hpp	/^        Multiply,     \/\/\/< The * key$/;"	e	enum:sf::Keyboard::Key
+N	SFML/Window/Keyboard.hpp	/^        N,            \/\/\/< The N key$/;"	e	enum:sf::Keyboard::Key
+Num0	SFML/Window/Keyboard.hpp	/^        Num0,         \/\/\/< The 0 key$/;"	e	enum:sf::Keyboard::Key
+Num1	SFML/Window/Keyboard.hpp	/^        Num1,         \/\/\/< The 1 key$/;"	e	enum:sf::Keyboard::Key
+Num2	SFML/Window/Keyboard.hpp	/^        Num2,         \/\/\/< The 2 key$/;"	e	enum:sf::Keyboard::Key
+Num3	SFML/Window/Keyboard.hpp	/^        Num3,         \/\/\/< The 3 key$/;"	e	enum:sf::Keyboard::Key
+Num4	SFML/Window/Keyboard.hpp	/^        Num4,         \/\/\/< The 4 key$/;"	e	enum:sf::Keyboard::Key
+Num5	SFML/Window/Keyboard.hpp	/^        Num5,         \/\/\/< The 5 key$/;"	e	enum:sf::Keyboard::Key
+Num6	SFML/Window/Keyboard.hpp	/^        Num6,         \/\/\/< The 6 key$/;"	e	enum:sf::Keyboard::Key
+Num7	SFML/Window/Keyboard.hpp	/^        Num7,         \/\/\/< The 7 key$/;"	e	enum:sf::Keyboard::Key
+Num8	SFML/Window/Keyboard.hpp	/^        Num8,         \/\/\/< The 8 key$/;"	e	enum:sf::Keyboard::Key
+Num9	SFML/Window/Keyboard.hpp	/^        Num9,         \/\/\/< The 9 key$/;"	e	enum:sf::Keyboard::Key
+Numpad0	SFML/Window/Keyboard.hpp	/^        Numpad0,      \/\/\/< The numpad 0 key$/;"	e	enum:sf::Keyboard::Key
+Numpad1	SFML/Window/Keyboard.hpp	/^        Numpad1,      \/\/\/< The numpad 1 key$/;"	e	enum:sf::Keyboard::Key
+Numpad2	SFML/Window/Keyboard.hpp	/^        Numpad2,      \/\/\/< The numpad 2 key$/;"	e	enum:sf::Keyboard::Key
+Numpad3	SFML/Window/Keyboard.hpp	/^        Numpad3,      \/\/\/< The numpad 3 key$/;"	e	enum:sf::Keyboard::Key
+Numpad4	SFML/Window/Keyboard.hpp	/^        Numpad4,      \/\/\/< The numpad 4 key$/;"	e	enum:sf::Keyboard::Key
+Numpad5	SFML/Window/Keyboard.hpp	/^        Numpad5,      \/\/\/< The numpad 5 key$/;"	e	enum:sf::Keyboard::Key
+Numpad6	SFML/Window/Keyboard.hpp	/^        Numpad6,      \/\/\/< The numpad 6 key$/;"	e	enum:sf::Keyboard::Key
+Numpad7	SFML/Window/Keyboard.hpp	/^        Numpad7,      \/\/\/< The numpad 7 key$/;"	e	enum:sf::Keyboard::Key
+Numpad8	SFML/Window/Keyboard.hpp	/^        Numpad8,      \/\/\/< The numpad 8 key$/;"	e	enum:sf::Keyboard::Key
+Numpad9	SFML/Window/Keyboard.hpp	/^        Numpad9,      \/\/\/< The numpad 9 key$/;"	e	enum:sf::Keyboard::Key
+O	SFML/Window/Keyboard.hpp	/^        O,            \/\/\/< The O key$/;"	e	enum:sf::Keyboard::Key
+P	SFML/Window/Keyboard.hpp	/^        P,            \/\/\/< The P key$/;"	e	enum:sf::Keyboard::Key
+PageDown	SFML/Window/Keyboard.hpp	/^        PageDown,     \/\/\/< The Page down key$/;"	e	enum:sf::Keyboard::Key
+PageUp	SFML/Window/Keyboard.hpp	/^        PageUp,       \/\/\/< The Page up key$/;"	e	enum:sf::Keyboard::Key
+Pause	SFML/Window/Keyboard.hpp	/^        Pause,        \/\/\/< The Pause key$/;"	e	enum:sf::Keyboard::Key
+Period	SFML/Window/Keyboard.hpp	/^        Period,       \/\/\/< The . key$/;"	e	enum:sf::Keyboard::Key
+Q	SFML/Window/Keyboard.hpp	/^        Q,            \/\/\/< The Q key$/;"	e	enum:sf::Keyboard::Key
+Quote	SFML/Window/Keyboard.hpp	/^        Quote,        \/\/\/< The ' key$/;"	e	enum:sf::Keyboard::Key
+R	SFML/Window/Keyboard.hpp	/^        R,            \/\/\/< The R key$/;"	e	enum:sf::Keyboard::Key
+RAlt	SFML/Window/Keyboard.hpp	/^        RAlt,         \/\/\/< The right Alt key$/;"	e	enum:sf::Keyboard::Key
+RBracket	SFML/Window/Keyboard.hpp	/^        RBracket,     \/\/\/< The ] key$/;"	e	enum:sf::Keyboard::Key
+RControl	SFML/Window/Keyboard.hpp	/^        RControl,     \/\/\/< The right Control key$/;"	e	enum:sf::Keyboard::Key
+RShift	SFML/Window/Keyboard.hpp	/^        RShift,       \/\/\/< The right Shift key$/;"	e	enum:sf::Keyboard::Key
+RSystem	SFML/Window/Keyboard.hpp	/^        RSystem,      \/\/\/< The right OS specific key: window (Windows and Linux), apple (MacOS X), ...$/;"	e	enum:sf::Keyboard::Key
+Return	SFML/Window/Keyboard.hpp	/^        Return,       \/\/\/< The Return key$/;"	e	enum:sf::Keyboard::Key
+Right	SFML/Window/Keyboard.hpp	/^        Right,        \/\/\/< Right arrow$/;"	e	enum:sf::Keyboard::Key
+S	SFML/Window/Keyboard.hpp	/^        S,            \/\/\/< The S key$/;"	e	enum:sf::Keyboard::Key
+SFML_KEYBOARD_HPP	SFML/Window/Keyboard.hpp	/^#define SFML_KEYBOARD_HPP$/;"	d
+SemiColon	SFML/Window/Keyboard.hpp	/^        SemiColon,    \/\/\/< The ; key$/;"	e	enum:sf::Keyboard::Key
+Slash	SFML/Window/Keyboard.hpp	/^        Slash,        \/\/\/< The \/ key$/;"	e	enum:sf::Keyboard::Key
+Space	SFML/Window/Keyboard.hpp	/^        Space,        \/\/\/< The Space key$/;"	e	enum:sf::Keyboard::Key
+Subtract	SFML/Window/Keyboard.hpp	/^        Subtract,     \/\/\/< The - key$/;"	e	enum:sf::Keyboard::Key
+T	SFML/Window/Keyboard.hpp	/^        T,            \/\/\/< The T key$/;"	e	enum:sf::Keyboard::Key
+Tab	SFML/Window/Keyboard.hpp	/^        Tab,          \/\/\/< The Tabulation key$/;"	e	enum:sf::Keyboard::Key
+Tilde	SFML/Window/Keyboard.hpp	/^        Tilde,        \/\/\/< The ~ key$/;"	e	enum:sf::Keyboard::Key
+U	SFML/Window/Keyboard.hpp	/^        U,            \/\/\/< The U key$/;"	e	enum:sf::Keyboard::Key
+Unknown	SFML/Window/Keyboard.hpp	/^        Unknown = -1, \/\/\/< Unhandled key$/;"	e	enum:sf::Keyboard::Key
+Up	SFML/Window/Keyboard.hpp	/^        Up,           \/\/\/< Up arrow$/;"	e	enum:sf::Keyboard::Key
+V	SFML/Window/Keyboard.hpp	/^        V,            \/\/\/< The V key$/;"	e	enum:sf::Keyboard::Key
+W	SFML/Window/Keyboard.hpp	/^        W,            \/\/\/< The W key$/;"	e	enum:sf::Keyboard::Key
+X	SFML/Window/Keyboard.hpp	/^        X,            \/\/\/< The X key$/;"	e	enum:sf::Keyboard::Key
+Y	SFML/Window/Keyboard.hpp	/^        Y,            \/\/\/< The Y key$/;"	e	enum:sf::Keyboard::Key
+Z	SFML/Window/Keyboard.hpp	/^        Z,            \/\/\/< The Z key$/;"	e	enum:sf::Keyboard::Key
+sf	SFML/Window/Keyboard.hpp	/^namespace sf$/;"	n
+Button	SFML/Window/Mouse.hpp	/^    enum Button$/;"	g	class:sf::Mouse
+ButtonCount	SFML/Window/Mouse.hpp	/^        ButtonCount \/\/\/< Keep last -- the total number of mouse buttons$/;"	e	enum:sf::Mouse::Button
+HorizontalWheel	SFML/Window/Mouse.hpp	/^        HorizontalWheel \/\/\/< The horizontal mouse wheel$/;"	e	enum:sf::Mouse::Wheel
+Left	SFML/Window/Mouse.hpp	/^        Left,       \/\/\/< The left mouse button$/;"	e	enum:sf::Mouse::Button
+Middle	SFML/Window/Mouse.hpp	/^        Middle,     \/\/\/< The middle (wheel) mouse button$/;"	e	enum:sf::Mouse::Button
+Mouse	SFML/Window/Mouse.hpp	/^class SFML_WINDOW_API Mouse$/;"	c	namespace:sf
+Right	SFML/Window/Mouse.hpp	/^        Right,      \/\/\/< The right mouse button$/;"	e	enum:sf::Mouse::Button
+SFML_MOUSE_HPP	SFML/Window/Mouse.hpp	/^#define SFML_MOUSE_HPP$/;"	d
+VerticalWheel	SFML/Window/Mouse.hpp	/^        VerticalWheel,  \/\/\/< The vertical mouse wheel$/;"	e	enum:sf::Mouse::Wheel
+Wheel	SFML/Window/Mouse.hpp	/^    enum Wheel$/;"	g	class:sf::Mouse
+XButton1	SFML/Window/Mouse.hpp	/^        XButton1,   \/\/\/< The first extra mouse button$/;"	e	enum:sf::Mouse::Button
+XButton2	SFML/Window/Mouse.hpp	/^        XButton2,   \/\/\/< The second extra mouse button$/;"	e	enum:sf::Mouse::Button
+sf	SFML/Window/Mouse.hpp	/^namespace sf$/;"	n
+Accelerometer	SFML/Window/Sensor.hpp	/^        Accelerometer,    \/\/\/< Measures the raw acceleration (m\/s^2)$/;"	e	enum:sf::Sensor::Type
+Count	SFML/Window/Sensor.hpp	/^        Count             \/\/\/< Keep last -- the total number of sensor types$/;"	e	enum:sf::Sensor::Type
+Gravity	SFML/Window/Sensor.hpp	/^        Gravity,          \/\/\/< Measures the direction and intensity of gravity, independent of device acceleration (m\/s^2)$/;"	e	enum:sf::Sensor::Type
+Gyroscope	SFML/Window/Sensor.hpp	/^        Gyroscope,        \/\/\/< Measures the raw rotation rates (degrees\/s)$/;"	e	enum:sf::Sensor::Type
+Magnetometer	SFML/Window/Sensor.hpp	/^        Magnetometer,     \/\/\/< Measures the ambient magnetic field (micro-teslas)$/;"	e	enum:sf::Sensor::Type
+Orientation	SFML/Window/Sensor.hpp	/^        Orientation,      \/\/\/< Measures the absolute 3D orientation (degrees)$/;"	e	enum:sf::Sensor::Type
+SFML_SENSOR_HPP	SFML/Window/Sensor.hpp	/^#define SFML_SENSOR_HPP$/;"	d
+Sensor	SFML/Window/Sensor.hpp	/^class SFML_WINDOW_API Sensor$/;"	c	namespace:sf
+Type	SFML/Window/Sensor.hpp	/^    enum Type$/;"	g	class:sf::Sensor
+UserAcceleration	SFML/Window/Sensor.hpp	/^        UserAcceleration, \/\/\/< Measures the direction and intensity of device acceleration, independent of the gravity (m\/s^2)$/;"	e	enum:sf::Sensor::Type
+sf	SFML/Window/Sensor.hpp	/^namespace sf$/;"	n
+SFML_TOUCH_HPP	SFML/Window/Touch.hpp	/^#define SFML_TOUCH_HPP$/;"	d
+Touch	SFML/Window/Touch.hpp	/^class SFML_WINDOW_API Touch$/;"	c	namespace:sf
+sf	SFML/Window/Touch.hpp	/^namespace sf$/;"	n
+SFML_VIDEOMODE_HPP	SFML/Window/VideoMode.hpp	/^#define SFML_VIDEOMODE_HPP$/;"	d
+VideoMode	SFML/Window/VideoMode.hpp	/^class SFML_WINDOW_API VideoMode$/;"	c	namespace:sf
+bitsPerPixel	SFML/Window/VideoMode.hpp	/^    unsigned int bitsPerPixel; \/\/\/< Video mode pixel depth, in bits per pixels$/;"	m	class:sf::VideoMode
+height	SFML/Window/VideoMode.hpp	/^    unsigned int height;       \/\/\/< Video mode height, in pixels$/;"	m	class:sf::VideoMode
+sf	SFML/Window/VideoMode.hpp	/^namespace sf$/;"	n
+width	SFML/Window/VideoMode.hpp	/^    unsigned int width;        \/\/\/< Video mode width, in pixels$/;"	m	class:sf::VideoMode
+SFML_WINDOW_HPP	SFML/Window/Window.hpp	/^#define SFML_WINDOW_HPP$/;"	d
+Window	SFML/Window/Window.hpp	/^class SFML_WINDOW_API Window : GlResource, NonCopyable$/;"	c	namespace:sf
+m_clock	SFML/Window/Window.hpp	/^    Clock             m_clock;          \/\/\/< Clock for measuring the elapsed time between frames$/;"	m	class:sf::Window
+m_context	SFML/Window/Window.hpp	/^    priv::GlContext*  m_context;        \/\/\/< Platform-specific implementation of the OpenGL context$/;"	m	class:sf::Window
+m_frameTimeLimit	SFML/Window/Window.hpp	/^    Time              m_frameTimeLimit; \/\/\/< Current framerate limit$/;"	m	class:sf::Window
+m_impl	SFML/Window/Window.hpp	/^    priv::WindowImpl* m_impl;           \/\/\/< Platform-specific implementation of the window$/;"	m	class:sf::Window
+m_size	SFML/Window/Window.hpp	/^    Vector2u          m_size;           \/\/\/< Current size of the window$/;"	m	class:sf::Window
+priv	SFML/Window/Window.hpp	/^namespace priv$/;"	n	namespace:sf
+sf	SFML/Window/Window.hpp	/^namespace sf$/;"	n
+SFML_WINDOWHANDLE_HPP	SFML/Window/WindowHandle.hpp	/^#define SFML_WINDOWHANDLE_HPP$/;"	d
+WindowHandle	SFML/Window/WindowHandle.hpp	/^    typedef HWND__* WindowHandle;$/;"	t	namespace:sf
+sf	SFML/Window/WindowHandle.hpp	/^namespace sf$/;"	n
+Close	SFML/Window/WindowStyle.hpp	/^        Close      = 1 << 2, \/\/\/< Title bar + close button$/;"	e	enum:sf::Style::__anon6
+Default	SFML/Window/WindowStyle.hpp	/^        Default = Titlebar | Resize | Close \/\/\/< Default window style$/;"	e	enum:sf::Style::__anon6
+Fullscreen	SFML/Window/WindowStyle.hpp	/^        Fullscreen = 1 << 3, \/\/\/< Fullscreen mode (this flag and all others are mutually exclusive)$/;"	e	enum:sf::Style::__anon6
+None	SFML/Window/WindowStyle.hpp	/^        None       = 0,      \/\/\/< No border \/ title bar (this flag and all others are mutually exclusive)$/;"	e	enum:sf::Style::__anon6
+Resize	SFML/Window/WindowStyle.hpp	/^        Resize     = 1 << 1, \/\/\/< Title bar + resizable border + maximize button$/;"	e	enum:sf::Style::__anon6
+SFML_WINDOWSTYLE_HPP	SFML/Window/WindowStyle.hpp	/^#define SFML_WINDOWSTYLE_HPP$/;"	d
+Style	SFML/Window/WindowStyle.hpp	/^namespace Style$/;"	n	namespace:sf
+Titlebar	SFML/Window/WindowStyle.hpp	/^        Titlebar   = 1 << 0, \/\/\/< Title bar + fixed border$/;"	e	enum:sf::Style::__anon6
+sf	SFML/Window/WindowStyle.hpp	/^namespace sf$/;"	n
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+VECTOR_DEFAULT_BLOCK_AMOUNT	vector.cpp	/^#define VECTOR_DEFAULT_BLOCK_AMOUNT /;"	d	file:
+VECTOR_DEFAULT_BLOCK_SIZE	vector.cpp	/^#define VECTOR_DEFAULT_BLOCK_SIZE /;"	d	file:
+VECTOR_OK	vector.cpp	/^	VECTOR_OK = 0,$/;"	e	enum:vector_error_codes	file:
+VECTOR_POISON	vector.cpp	/^#define VECTOR_POISON /;"	d	file:
+_RET_CODE	vector.cpp	/^		#define _RET_CODE(/;"	d	file:
+_RET_CODE	vector.cpp	/^		#undef _RET_CODE$/;"	d	file:
+append	vector.cpp	/^void vector <data_T>::append(data_T value)$/;"	f	class:vector
+block_amount	vector.cpp	/^	data_T* data; uint block_amount; uint count;$/;"	m	class:vector	file:
+check	vector.cpp	/^vector_error_code vector <data_T>::check()$/;"	f	class:vector
+count	vector.cpp	/^	data_T* data; uint block_amount; uint count;$/;"	m	class:vector	file:
+da	vector.cpp	/^   	#define  da /;"	d	file:
+data	vector.cpp	/^	data_T* data; uint block_amount; uint count;$/;"	m	class:vector	file:
+db	vector.cpp	/^   	#define  db /;"	d	file:
+dump	vector.cpp	/^void vector <data_T>::dump(string name, string destination)$/;"	f	class:vector
+expand	vector.cpp	/^void vector <data_T>::expand()$/;"	f	class:vector
+length	vector.cpp	/^uint vector <data_T>::length()$/;"	f	class:vector
+max	vector.cpp	/^data_T vector <data_T>::max()$/;"	f	class:vector
+min	vector.cpp	/^data_T vector <data_T>::min()$/;"	f	class:vector
+operator =	vector.cpp	/^vector <data_T>& vector <data_T>::operator=(const vector <data_T>& that)$/;"	f	class:vector
+operator []	vector.cpp	/^data_T vector <data_T>::operator[](double t)$/;"	f	class:vector
+operator []	vector.cpp	/^data_T vector <data_T>::operator[](int n)$/;"	f	class:vector
+shorten	vector.cpp	/^void vector <data_T>::shorten()$/;"	f	class:vector
+swap	vector.cpp	/^void vector <data_T>::swap(vector& that)$/;"	f	class:vector
+uint	vector.cpp	/^typedef unsigned int uint;$/;"	t	file:
+vector	vector.cpp	/^class vector$/;"	c	file:
+vector	vector.cpp	/^vector <data_T>::vector()$/;"	f	class:vector
+vector	vector.cpp	/^vector <data_T>::vector(const vector <data_T>& v)$/;"	f	class:vector
+vector	vector.cpp	/^vector <data_T>::vector(uint size)$/;"	f	class:vector
+vector_convert_error_code_to_string	vector.cpp	/^string vector_convert_error_code_to_string(vector_error_code code)$/;"	f
+vector_error_code	vector.cpp	/^} vector_error_code;$/;"	t	typeref:enum:vector_error_codes	file:
+vector_error_codes	vector.cpp	/^typedef enum vector_error_codes$/;"	g	file:
+~vector	vector.cpp	/^vector <data_T>::~vector()$/;"	f	class:vector
+HEIGHT	xy.cpp	/^#define HEIGHT /;"	d	file:
+MAXN	xy.cpp	/^#define MAXN /;"	d	file:
+WIDTH	xy.cpp	/^#define WIDTH /;"	d	file:
+main	xy.cpp	/^int main()$/;"	f

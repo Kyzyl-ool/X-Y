@@ -183,9 +183,9 @@ data_T vector <data_T>::operator[](double t)
 {
 	uint a = trunc(t+1);
 	uint b = trunc(t);
-	#define db data[b]
-	#define da data[a]
-	return da*(t-b)-db*(t-a);
+   	#define  db data[b]
+   	#define  da data[a]
+   	return  da*(t-b)-db*(t-a);
 }
 
 template <typename data_T>
